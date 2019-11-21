@@ -5,11 +5,11 @@ import (
 	"net/url"
 	"os"
 
-	"github.com/bradhe/location-search/loading"
-	"github.com/bradhe/location-search/models"
-	"github.com/bradhe/location-search/parsing"
-	"github.com/bradhe/location-search/search"
-	"github.com/bradhe/location-search/server"
+	"github.com/bradhe/hobo/loading"
+	"github.com/bradhe/hobo/models"
+	"github.com/bradhe/hobo/parsing"
+	"github.com/bradhe/hobo/search"
+	"github.com/bradhe/hobo/server"
 
 	"github.com/urfave/cli"
 )
@@ -20,7 +20,7 @@ var version string
 func doServe(c *cli.Context) error {
 	go killOnSignal(c)
 
-	logger.Infof("starting up location-search v%s (%s)", version, gitCommit)
+	logger.Infof("starting up hobo v%s (%s)", version, gitCommit)
 	logger.Infof(" --addr=%s", c.GlobalString("addr"))
 	logger.Infof(" --elasticsearch-addr=%s", c.GlobalString("elasticsearch-url"))
 
@@ -133,7 +133,7 @@ func doParse(c *cli.Context) error {
 
 func main() {
 	app := &cli.App{
-		Name:  "location-search",
+		Name:  "hobo",
 		Usage: "perform and maintain search against a",
 		Flags: []cli.Flag{
 			&cli.StringFlag{

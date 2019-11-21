@@ -16,7 +16,7 @@ jobs:
       - setup_remote_docker
       - run: make image
       - run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-      - run: docker push bradhe/location-search:latest
+      - run: docker push bradhe/hobo:latest
 workflows:
   version: 2
   build-deploy:

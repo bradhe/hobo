@@ -5,7 +5,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/bradhe/location-search/content"
+	"github.com/bradhe/hobo/content"
 )
 
 type AdminCode struct {

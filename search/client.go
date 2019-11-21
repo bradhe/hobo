@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/bradhe/location-search/models"
+	"github.com/bradhe/hobo/models"
 )
 
 type Client struct {

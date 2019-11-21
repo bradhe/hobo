@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/bradhe/location-search/models"
-	"github.com/bradhe/location-search/search"
+	"github.com/bradhe/hobo/models"
+	"github.com/bradhe/hobo/search"
 
 	"github.com/gorilla/mux"
 )

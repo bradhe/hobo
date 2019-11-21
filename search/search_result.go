@@ -1,7 +1,7 @@
 package search
 
 import (
-	"github.com/bradhe/location-search/models"
+	"github.com/bradhe/hobo/models"
 )
 
 type SearchHit struct {

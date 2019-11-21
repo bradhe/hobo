@@ -6,7 +6,7 @@ import (
 	"io"
 	"io/ioutil"
 
-	"github.com/bradhe/location-search/models"
+	"github.com/bradhe/hobo/models"
 )
 
 type BulkIndexBuffer struct {

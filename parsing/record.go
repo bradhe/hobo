@@ -6,8 +6,8 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/bradhe/location-search/content"
-	"github.com/bradhe/location-search/models"
+	"github.com/bradhe/hobo/content"
+	"github.com/bradhe/hobo/models"
 
 	"github.com/mmcloughlin/geohash"
 )

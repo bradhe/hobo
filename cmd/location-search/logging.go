@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/bradhe/location-search/logs"
+	"github.com/bradhe/hobo/logs"
 )
 
 var logger = logs.WithPackage("main")

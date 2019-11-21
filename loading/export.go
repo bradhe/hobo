@@ -8,8 +8,8 @@ import (
 	"path"
 	"strconv"
 
-	"github.com/bradhe/location-search/content"
-	"github.com/bradhe/location-search/models"
+	"github.com/bradhe/hobo/content"
+	"github.com/bradhe/hobo/models"
 )
 
 type ParseExportCallbackFunc func(models.City) error
