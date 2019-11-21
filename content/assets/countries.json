@@ -1,0 +1,1994 @@
+[
+  {
+    "name": "Afghanistan",
+    "ascii_name": "Afghanistan",
+    "official_name": "The Islamic Republic of Afghanistan",
+    "sovereignty": "UN member state",
+    "alpha2": "AF",
+    "alpha3": "AFG"
+  },
+  {
+    "name": "Åland Islands",
+    "ascii_name": "Aland Islands",
+    "official_name": "Åland",
+    "sovereignty": "Finland",
+    "alpha2": "AX",
+    "alpha3": "ALA"
+  },
+  {
+    "name": "Albania",
+    "ascii_name": "Albania",
+    "official_name": "The Republic of Albania",
+    "sovereignty": "UN member state",
+    "alpha2": "AL",
+    "alpha3": "ALB"
+  },
+  {
+    "name": "Algeria",
+    "ascii_name": "Algeria",
+    "official_name": "The People's Democratic Republic of Algeria",
+    "sovereignty": "UN member state",
+    "alpha2": "DZ",
+    "alpha3": "DZA"
+  },
+  {
+    "name": "American Samoa",
+    "ascii_name": "American Samoa",
+    "official_name": "The Territory of American Samoa",
+    "sovereignty": "United States",
+    "alpha2": "AS",
+    "alpha3": "ASM"
+  },
+  {
+    "name": "Andorra",
+    "ascii_name": "Andorra",
+    "official_name": "The Principality of Andorra",
+    "sovereignty": "UN member state",
+    "alpha2": "AD",
+    "alpha3": "AND"
+  },
+  {
+    "name": "Angola",
+    "ascii_name": "Angola",
+    "official_name": "The Republic of Angola",
+    "sovereignty": "UN member state",
+    "alpha2": "AO",
+    "alpha3": "AGO"
+  },
+  {
+    "name": "Anguilla",
+    "ascii_name": "Anguilla",
+    "official_name": "Anguilla",
+    "sovereignty": "United Kingdom",
+    "alpha2": "AI",
+    "alpha3": "AIA"
+  },
+  {
+    "name": "Antarctica",
+    "ascii_name": "Antarctica",
+    "official_name": "All land and ice shelves south of the 60th parallel south",
+    "sovereignty": "Antarctic Treaty",
+    "alpha2": "AQ",
+    "alpha3": "ATA"
+  },
+  {
+    "name": "Antigua and Barbuda",
+    "official_name": "Antigua and Barbuda",
+    "sovereignty": "UN member state",
+    "alpha2": "AG",
+    "alpha3": "ATG",
+    "ascii_name": "Antigua and Barbuda"
+  },
+  {
+    "name": "Argentina",
+    "official_name": "The Argentine Republic",
+    "sovereignty": "UN member state",
+    "alpha2": "AR",
+    "alpha3": "ARG",
+    "ascii_name": "Argentina"
+  },
+  {
+    "name": "Armenia",
+    "official_name": "The Republic of Armenia",
+    "sovereignty": "UN member state",
+    "alpha2": "AM",
+    "alpha3": "ARM",
+    "ascii_name": "Armenia"
+  },
+  {
+    "name": "Aruba",
+    "official_name": "Aruba",
+    "sovereignty": "Netherlands",
+    "alpha2": "AW",
+    "alpha3": "ABW",
+    "ascii_name": "Aruba"
+  },
+  {
+    "name": "Australia",
+    "official_name": "The Commonwealth of Australia",
+    "sovereignty": "UN member state",
+    "alpha2": "AU",
+    "alpha3": "AUS",
+    "ascii_name": "Australia"
+  },
+  {
+    "name": "Austria",
+    "official_name": "The Republic of Austria",
+    "sovereignty": "UN member state",
+    "alpha2": "AT",
+    "alpha3": "AUT",
+    "ascii_name": "Austria"
+  },
+  {
+    "name": "Azerbaijan",
+    "official_name": "The Republic of Azerbaijan",
+    "sovereignty": "UN member state",
+    "alpha2": "AZ",
+    "alpha3": "AZE",
+    "ascii_name": "Azerbaijan"
+  },
+  {
+    "name": "The Bahamas",
+    "official_name": "The Commonwealth of The Bahamas",
+    "sovereignty": "UN member state",
+    "alpha2": "BS",
+    "alpha3": "BHS",
+    "ascii_name": "The Bahamas"
+  },
+  {
+    "name": "Bahrain",
+    "official_name": "The Kingdom of Bahrain",
+    "sovereignty": "UN member state",
+    "alpha2": "BH",
+    "alpha3": "BHR",
+    "ascii_name": "Bahrain"
+  },
+  {
+    "name": "Bangladesh",
+    "official_name": "The People's Republic of Bangladesh",
+    "sovereignty": "UN member state",
+    "alpha2": "BD",
+    "alpha3": "BGD",
+    "ascii_name": "Bangladesh"
+  },
+  {
+    "name": "Barbados",
+    "official_name": "Barbados",
+    "sovereignty": "UN member state",
+    "alpha2": "BB",
+    "alpha3": "BRB",
+    "ascii_name": "Barbados"
+  },
+  {
+    "name": "Belarus",
+    "official_name": "The Republic of Belarus",
+    "sovereignty": "UN member state",
+    "alpha2": "BY",
+    "alpha3": "BLR",
+    "ascii_name": "Belarus"
+  },
+  {
+    "name": "Belgium",
+    "official_name": "The Kingdom of Belgium",
+    "sovereignty": "UN member state",
+    "alpha2": "BE",
+    "alpha3": "BEL",
+    "ascii_name": "Belgium"
+  },
+  {
+    "name": "Belize",
+    "official_name": "Belize",
+    "sovereignty": "UN member state",
+    "alpha2": "BZ",
+    "alpha3": "BLZ",
+    "ascii_name": "Belize"
+  },
+  {
+    "name": "Benin",
+    "official_name": "The Republic of Benin",
+    "sovereignty": "UN member state",
+    "alpha2": "BJ",
+    "alpha3": "BEN",
+    "ascii_name": "Benin"
+  },
+  {
+    "name": "Bermuda",
+    "official_name": "Bermuda",
+    "sovereignty": "United Kingdom",
+    "alpha2": "BM",
+    "alpha3": "BMU",
+    "ascii_name": "Bermuda"
+  },
+  {
+    "name": "Bhutan",
+    "official_name": "The Kingdom of Bhutan",
+    "sovereignty": "UN member state",
+    "alpha2": "BT",
+    "alpha3": "BTN",
+    "ascii_name": "Bhutan"
+  },
+  {
+    "name": "Bolivia",
+    "official_name": "The Plurinational State of Bolivia",
+    "sovereignty": "UN member state",
+    "alpha2": "BO",
+    "alpha3": "BOL",
+    "ascii_name": "Bolivia"
+  },
+  {
+    "name": "Bonaire",
+    "official_name": "Bonaire, Sint Eustatius and Saba",
+    "sovereignty": "Netherlands",
+    "alpha2": "BQ",
+    "alpha3": "BES",
+    "ascii_name": "Bonaire"
+  },
+  {
+    "name": "Bosnia and Herzegovina",
+    "official_name": "Bosnia and Herzegovina",
+    "sovereignty": "UN member state",
+    "alpha2": "BA",
+    "alpha3": "BIH",
+    "ascii_name": "Bosnia and Herzegovina"
+  },
+  {
+    "name": "Botswana",
+    "official_name": "The Republic of Botswana",
+    "sovereignty": "UN member state",
+    "alpha2": "BW",
+    "alpha3": "BWA",
+    "ascii_name": "Botswana"
+  },
+  {
+    "name": "Bouvet Island",
+    "official_name": "Bouvet Island",
+    "sovereignty": "Norway",
+    "alpha2": "BV",
+    "alpha3": "BVT",
+    "ascii_name": "Bouvet Island"
+  },
+  {
+    "name": "Brazil",
+    "official_name": "The Federative Republic of Brazil",
+    "sovereignty": "UN member state",
+    "alpha2": "BR",
+    "alpha3": "BRA",
+    "ascii_name": "Brazil"
+  },
+  {
+    "name": "The British Indian Ocean Territory",
+    "official_name": "The British Indian Ocean Territory",
+    "sovereignty": "United Kingdom",
+    "alpha2": "IO",
+    "alpha3": "IOT",
+    "ascii_name": "The British Indian Ocean Territory"
+  },
+  {
+    "name": "Brunei",
+    "official_name": "The Nation of Brunei, the Abode of Peace",
+    "sovereignty": "UN member state",
+    "alpha2": "BN",
+    "alpha3": "BRN",
+    "ascii_name": "Brunei"
+  },
+  {
+    "name": "Bulgaria",
+    "official_name": "The Republic of Bulgaria",
+    "sovereignty": "UN member state",
+    "alpha2": "BG",
+    "alpha3": "BGR",
+    "ascii_name": "Bulgaria"
+  },
+  {
+    "name": "Burkina Faso",
+    "official_name": "Burkina Faso",
+    "sovereignty": "UN member state",
+    "alpha2": "BF",
+    "alpha3": "BFA",
+    "ascii_name": "Burkina Faso"
+  },
+  {
+    "name": "Burundi",
+    "official_name": "The Republic of Burundi",
+    "sovereignty": "UN member state",
+    "alpha2": "BI",
+    "alpha3": "BDI",
+    "ascii_name": "Burundi"
+  },
+  {
+    "name": "Cabo Verde",
+    "official_name": "The Republic of Cabo Verde",
+    "sovereignty": "UN member state",
+    "alpha2": "CV",
+    "alpha3": "CPV",
+    "ascii_name": "Cabo Verde"
+  },
+  {
+    "name": "Cambodia",
+    "official_name": "The Kingdom of Cambodia",
+    "sovereignty": "UN member state",
+    "alpha2": "KH",
+    "alpha3": "KHM",
+    "ascii_name": "Cambodia"
+  },
+  {
+    "name": "Cameroon",
+    "official_name": "The Republic of Cameroon",
+    "sovereignty": "UN member state",
+    "alpha2": "CM",
+    "alpha3": "CMR",
+    "ascii_name": "Cameroon"
+  },
+  {
+    "name": "Canada",
+    "official_name": "Canada",
+    "sovereignty": "UN member state",
+    "alpha2": "CA",
+    "alpha3": "CAN",
+    "ascii_name": "Canada"
+  },
+  {
+    "name": "Cayman Islands",
+    "official_name": "The Cayman Islands",
+    "sovereignty": "United Kingdom",
+    "alpha2": "KY",
+    "alpha3": "CYM",
+    "ascii_name": "Cayman Islands"
+  },
+  {
+    "name": "Central African Republic",
+    "official_name": "The Central African Republic",
+    "sovereignty": "UN member state",
+    "alpha2": "CF",
+    "alpha3": "CAF",
+    "ascii_name": "Central African Republic"
+  },
+  {
+    "name": "Chad",
+    "official_name": "The Republic of Chad",
+    "sovereignty": "UN member state",
+    "alpha2": "TD",
+    "alpha3": "TCD",
+    "ascii_name": "Chad"
+  },
+  {
+    "name": "Chile",
+    "official_name": "The Republic of Chile",
+    "sovereignty": "UN member state",
+    "alpha2": "CL",
+    "alpha3": "CHL",
+    "ascii_name": "Chile"
+  },
+  {
+    "name": "China",
+    "official_name": "The People's Republic of China",
+    "sovereignty": "UN member state",
+    "alpha2": "CN",
+    "alpha3": "CHN",
+    "ascii_name": "China"
+  },
+  {
+    "name": "Christmas Island",
+    "official_name": "The Territory of Christmas Island",
+    "sovereignty": "Australia",
+    "alpha2": "CX",
+    "alpha3": "CXR",
+    "ascii_name": "Christmas Island"
+  },
+  {
+    "name": "Cocos Islands",
+    "official_name": "The Territory of Cocos (Keeling) Islands",
+    "sovereignty": "Australia",
+    "alpha2": "CC",
+    "alpha3": "CCK",
+    "ascii_name": "Cocos Islands"
+  },
+  {
+    "name": "Colombia",
+    "official_name": "The Republic of Colombia",
+    "sovereignty": "UN member state",
+    "alpha2": "CO",
+    "alpha3": "COL",
+    "ascii_name": "Colombia"
+  },
+  {
+    "name": "Comoros",
+    "official_name": "The Union of the Comoros",
+    "sovereignty": "UN member state",
+    "alpha2": "KM",
+    "alpha3": "COM",
+    "ascii_name": "Comoros"
+  },
+  {
+    "name": "Democratic Republic of the Congo",
+    "official_name": "The Democratic Republic of the Congo",
+    "sovereignty": "UN member state",
+    "alpha2": "CD",
+    "alpha3": "COD",
+    "ascii_name": "Democratic Republic of the Congo"
+  },
+  {
+    "name": "Congo",
+    "official_name": "The Republic of the Congo",
+    "sovereignty": "UN member state",
+    "alpha2": "CG",
+    "alpha3": "COG",
+    "ascii_name": "Congo"
+  },
+  {
+    "name": "Cook Islands",
+    "official_name": "The Cook Islands",
+    "sovereignty": "New Zealand",
+    "alpha2": "CK",
+    "alpha3": "COK",
+    "ascii_name": "Cook Islands"
+  },
+  {
+    "name": "Costa Rica",
+    "official_name": "The Republic of Costa Rica",
+    "sovereignty": "UN member state",
+    "alpha2": "CR",
+    "alpha3": "CRI",
+    "ascii_name": "Costa Rica"
+  },
+  {
+    "name": "Côte d'Ivoire",
+    "official_name": "The Republic of Côte d'Ivoire",
+    "sovereignty": "UN member state",
+    "alpha2": "CI",
+    "alpha3": "CIV",
+    "ascii_name": "Côte d'Ivoire"
+  },
+  {
+    "name": "Croatia",
+    "official_name": "The Republic of Croatia",
+    "sovereignty": "UN member state",
+    "alpha2": "HR",
+    "alpha3": "HRV",
+    "ascii_name": "Croatia"
+  },
+  {
+    "name": "Cuba",
+    "official_name": "The Republic of Cuba",
+    "sovereignty": "UN member state",
+    "alpha2": "CU",
+    "alpha3": "CUB",
+    "ascii_name": "Cuba"
+  },
+  {
+    "name": "Curaçao",
+    "official_name": "The Country of Curaçao",
+    "sovereignty": "Netherlands",
+    "alpha2": "CW",
+    "alpha3": "CUW",
+    "ascii_name": "Curaçao"
+  },
+  {
+    "name": "Cyprus",
+    "official_name": "The Republic of Cyprus",
+    "sovereignty": "UN member state",
+    "alpha2": "CY",
+    "alpha3": "CYP",
+    "ascii_name": "Cyprus"
+  },
+  {
+    "name": "Czech Republic",
+    "official_name": "The Czech Republic",
+    "sovereignty": "UN member state",
+    "alpha2": "CZ",
+    "alpha3": "CZE",
+    "ascii_name": "Czech Republic"
+  },
+  {
+    "name": "Denmark",
+    "official_name": "The Kingdom of Denmark",
+    "sovereignty": "UN member state",
+    "alpha2": "DK",
+    "alpha3": "DNK",
+    "ascii_name": "Denmark"
+  },
+  {
+    "name": "Djibouti",
+    "official_name": "The Republic of Djibouti",
+    "sovereignty": "UN member state",
+    "alpha2": "DJ",
+    "alpha3": "DJI",
+    "ascii_name": "Djibouti"
+  },
+  {
+    "name": "Dominica",
+    "official_name": "The Commonwealth of Dominica",
+    "sovereignty": "UN member state",
+    "alpha2": "DM",
+    "alpha3": "DMA",
+    "ascii_name": "Dominica"
+  },
+  {
+    "name": "Dominican Republic",
+    "official_name": "The Dominican Republic",
+    "sovereignty": "UN member state",
+    "alpha2": "DO",
+    "alpha3": "DOM",
+    "ascii_name": "Dominican Republic"
+  },
+  {
+    "name": "Ecuador",
+    "official_name": "The Republic of Ecuador",
+    "sovereignty": "UN member state",
+    "alpha2": "EC",
+    "alpha3": "ECU",
+    "ascii_name": "Ecuador"
+  },
+  {
+    "name": "Egypt",
+    "official_name": "The Arab Republic of Egypt",
+    "sovereignty": "UN member state",
+    "alpha2": "EG",
+    "alpha3": "EGY",
+    "ascii_name": "Egypt"
+  },
+  {
+    "name": "El Salvador",
+    "official_name": "The Republic of El Salvador",
+    "sovereignty": "UN member state",
+    "alpha2": "SV",
+    "alpha3": "SLV",
+    "ascii_name": "El Salvador"
+  },
+  {
+    "name": "Equatorial Guinea",
+    "official_name": "The Republic of Equatorial Guinea",
+    "sovereignty": "UN member state",
+    "alpha2": "GQ",
+    "alpha3": "GNQ",
+    "ascii_name": "Equatorial Guinea"
+  },
+  {
+    "name": "Eritrea",
+    "official_name": "The State of Eritrea",
+    "sovereignty": "UN member state",
+    "alpha2": "ER",
+    "alpha3": "ERI",
+    "ascii_name": "Eritrea"
+  },
+  {
+    "name": "Estonia",
+    "official_name": "The Republic of Estonia",
+    "sovereignty": "UN member state",
+    "alpha2": "EE",
+    "alpha3": "EST",
+    "ascii_name": "Estonia"
+  },
+  {
+    "name": "Eswatini",
+    "official_name": "The Kingdom of Eswatini",
+    "sovereignty": "UN member state",
+    "alpha2": "SZ",
+    "alpha3": "SWZ",
+    "ascii_name": "Eswatini"
+  },
+  {
+    "name": "Ethiopia",
+    "official_name": "The Federal Democratic Republic of Ethiopia",
+    "sovereignty": "UN member state",
+    "alpha2": "ET",
+    "alpha3": "ETH",
+    "ascii_name": "Ethiopia"
+  },
+  {
+    "name": "Falkland Islands",
+    "official_name": "The Falkland Islands",
+    "sovereignty": "United Kingdom",
+    "alpha2": "FK",
+    "alpha3": "FLK",
+    "ascii_name": "Falkland Islands"
+  },
+  {
+    "name": "Faroe Islands",
+    "official_name": "The Faroe Islands",
+    "sovereignty": "Denmark",
+    "alpha2": "FO",
+    "alpha3": "FRO",
+    "ascii_name": "Faroe Islands"
+  },
+  {
+    "name": "Fiji",
+    "official_name": "The Republic of Fiji",
+    "sovereignty": "UN member state",
+    "alpha2": "FJ",
+    "alpha3": "FJI",
+    "ascii_name": "Fiji"
+  },
+  {
+    "name": "Finland",
+    "official_name": "The Republic of Finland",
+    "sovereignty": "UN member state",
+    "alpha2": "FI",
+    "alpha3": "FIN",
+    "ascii_name": "Finland"
+  },
+  {
+    "name": "France",
+    "official_name": "The French Republic",
+    "sovereignty": "UN member state",
+    "alpha2": "FR",
+    "alpha3": "FRA",
+    "ascii_name": "France"
+  },
+  {
+    "name": "French Guiana",
+    "official_name": "Guyane",
+    "sovereignty": "France",
+    "alpha2": "GF",
+    "alpha3": "GUF",
+    "ascii_name": "French Guiana"
+  },
+  {
+    "name": "French Polynesia",
+    "official_name": "French Polynesia",
+    "sovereignty": "France",
+    "alpha2": "PF",
+    "alpha3": "PYF",
+    "ascii_name": "French Polynesia"
+  },
+  {
+    "name": "French Southern Territories",
+    "official_name": "The French Southern and Antarctic Lands",
+    "sovereignty": "France",
+    "alpha2": "TF",
+    "alpha3": "ATF",
+    "ascii_name": "French Southern Territories"
+  },
+  {
+    "name": "Gabon",
+    "official_name": "The Gabonese Republic",
+    "sovereignty": "UN member state",
+    "alpha2": "GA",
+    "alpha3": "GAB",
+    "ascii_name": "Gabon"
+  },
+  {
+    "name": "Gambia",
+    "official_name": "The Republic of The Gambia",
+    "sovereignty": "UN member state",
+    "alpha2": "GM",
+    "alpha3": "GMB",
+    "ascii_name": "Gambia"
+  },
+  {
+    "name": "Georgia",
+    "official_name": "Georgia",
+    "sovereignty": "UN member state",
+    "alpha2": "GE",
+    "alpha3": "GEO",
+    "ascii_name": "Georgia"
+  },
+  {
+    "name": "Germany",
+    "official_name": "The Federal Republic of Germany",
+    "sovereignty": "UN member state",
+    "alpha2": "DE",
+    "alpha3": "DEU",
+    "ascii_name": "Germany"
+  },
+  {
+    "name": "Ghana",
+    "official_name": "The Republic of Ghana",
+    "sovereignty": "UN member state",
+    "alpha2": "GH",
+    "alpha3": "GHA",
+    "ascii_name": "Ghana"
+  },
+  {
+    "name": "Gibraltar",
+    "official_name": "Gibraltar",
+    "sovereignty": "United Kingdom",
+    "alpha2": "GI",
+    "alpha3": "GIB",
+    "ascii_name": "Gibraltar"
+  },
+  {
+    "name": "Greece",
+    "official_name": "The Hellenic Republic",
+    "sovereignty": "UN member state",
+    "alpha2": "GR",
+    "alpha3": "GRC",
+    "ascii_name": "Greece"
+  },
+  {
+    "name": "Greenland",
+    "official_name": "Kalaallit Nunaat",
+    "sovereignty": "Denmark",
+    "alpha2": "GL",
+    "alpha3": "GRL",
+    "ascii_name": "Greenland"
+  },
+  {
+    "name": "Grenada",
+    "official_name": "Grenada",
+    "sovereignty": "UN member state",
+    "alpha2": "GD",
+    "alpha3": "GRD",
+    "ascii_name": "Grenada"
+  },
+  {
+    "name": "Guadeloupe",
+    "official_name": "Guadeloupe",
+    "sovereignty": "France",
+    "alpha2": "GP",
+    "alpha3": "GLP",
+    "ascii_name": "Guadeloupe"
+  },
+  {
+    "name": "Guam",
+    "official_name": "The Territory of Guam",
+    "sovereignty": "United States",
+    "alpha2": "GU",
+    "alpha3": "GUM",
+    "ascii_name": "Guam"
+  },
+  {
+    "name": "Guatemala",
+    "official_name": "The Republic of Guatemala",
+    "sovereignty": "UN member state",
+    "alpha2": "GT",
+    "alpha3": "GTM",
+    "ascii_name": "Guatemala"
+  },
+  {
+    "name": "Guernsey",
+    "official_name": "The Bailiwick of Guernsey",
+    "sovereignty": "British Crown",
+    "alpha2": "GG",
+    "alpha3": "GGY",
+    "ascii_name": "Guernsey"
+  },
+  {
+    "name": "Guinea",
+    "official_name": "The Republic of Guinea",
+    "sovereignty": "UN member state",
+    "alpha2": "GN",
+    "alpha3": "GIN",
+    "ascii_name": "Guinea"
+  },
+  {
+    "name": "Guinea-Bissau",
+    "official_name": "The Republic of Guinea-Bissau",
+    "sovereignty": "UN member state",
+    "alpha2": "GW",
+    "alpha3": "GNB",
+    "ascii_name": "Guinea-Bissau"
+  },
+  {
+    "name": "Guyana",
+    "official_name": "The Co-operative Republic of Guyana",
+    "sovereignty": "UN member state",
+    "alpha2": "GY",
+    "alpha3": "GUY",
+    "ascii_name": "Guyana"
+  },
+  {
+    "name": "Haiti",
+    "official_name": "The Republic of Haiti",
+    "sovereignty": "UN member state",
+    "alpha2": "HT",
+    "alpha3": "HTI",
+    "ascii_name": "Haiti"
+  },
+  {
+    "name": "Heard Island and McDonald Islands",
+    "official_name": "The Territory of Heard Island and McDonald Islands",
+    "sovereignty": "Australia",
+    "alpha2": "HM",
+    "alpha3": "HMD",
+    "ascii_name": "Heard Island and McDonald Islands"
+  },
+  {
+    "name": "Vatican City",
+    "official_name": "The Holy See",
+    "sovereignty": "UN observer",
+    "alpha2": "VA",
+    "alpha3": "VAT",
+    "ascii_name": "Vatican City"
+  },
+  {
+    "name": "Honduras",
+    "official_name": "The Republic of Honduras",
+    "sovereignty": "UN member state",
+    "alpha2": "HN",
+    "alpha3": "HND",
+    "ascii_name": "Honduras"
+  },
+  {
+    "name": " ong Kong",
+    "official_name": "The Hong Kong Special Administrative Region of China",
+    "sovereignty": "China",
+    "alpha2": "HK",
+    "alpha3": "HKG",
+    "ascii_name": " ong Kong"
+  },
+  {
+    "name": "Hungary",
+    "official_name": "Hungary",
+    "sovereignty": "UN member state",
+    "alpha2": "HU",
+    "alpha3": "HUN",
+    "ascii_name": "Hungary"
+  },
+  {
+    "name": "Iceland",
+    "official_name": "Iceland",
+    "sovereignty": "UN member state",
+    "alpha2": "IS",
+    "alpha3": "ISL",
+    "ascii_name": "Iceland"
+  },
+  {
+    "name": "India",
+    "official_name": "The Republic of India",
+    "sovereignty": "UN member state",
+    "alpha2": "IN",
+    "alpha3": "IND",
+    "ascii_name": "India"
+  },
+  {
+    "name": "Indonesia",
+    "official_name": "The Republic of Indonesia",
+    "sovereignty": "UN member state",
+    "alpha2": "ID",
+    "alpha3": "IDN",
+    "ascii_name": "Indonesia"
+  },
+  {
+    "name": "Iran",
+    "official_name": "The Islamic Republic of Iran",
+    "sovereignty": "UN member state",
+    "alpha2": "IR",
+    "alpha3": "IRN",
+    "ascii_name": "Iran"
+  },
+  {
+    "name": "Iraq",
+    "official_name": "The Republic of Iraq",
+    "sovereignty": "UN member state",
+    "alpha2": "IQ",
+    "alpha3": "IRQ",
+    "ascii_name": "Iraq"
+  },
+  {
+    "name": "Ireland",
+    "official_name": "Ireland",
+    "sovereignty": "UN member state",
+    "alpha2": "IE",
+    "alpha3": "IRL",
+    "ascii_name": "Ireland"
+  },
+  {
+    "name": "Isle of Man",
+    "official_name": "The Isle of Man",
+    "sovereignty": "British Crown",
+    "alpha2": "IM",
+    "alpha3": "IMN",
+    "ascii_name": "Isle of Man"
+  },
+  {
+    "name": "Israel",
+    "official_name": "The State of Israel",
+    "sovereignty": "UN member state",
+    "alpha2": "IL",
+    "alpha3": "ISR",
+    "ascii_name": "Israel"
+  },
+  {
+    "name": "Italy",
+    "official_name": "The Italian Republic",
+    "sovereignty": "UN member state",
+    "alpha2": "IT",
+    "alpha3": "ITA",
+    "ascii_name": "Italy"
+  },
+  {
+    "name": "Jamaica",
+    "official_name": "Jamaica",
+    "sovereignty": "UN member state",
+    "alpha2": "JM",
+    "alpha3": "JAM",
+    "ascii_name": "Jamaica"
+  },
+  {
+    "name": "Japan",
+    "official_name": "Japan",
+    "sovereignty": "UN member state",
+    "alpha2": "JP",
+    "alpha3": "JPN",
+    "ascii_name": "Japan"
+  },
+  {
+    "name": "Jersey",
+    "official_name": "The Bailiwick of Jersey",
+    "sovereignty": "British Crown",
+    "alpha2": "JE",
+    "alpha3": "JEY",
+    "ascii_name": "Jersey"
+  },
+  {
+    "name": "Jordan",
+    "official_name": "The Hashemite Kingdom of Jordan",
+    "sovereignty": "UN member state",
+    "alpha2": "JO",
+    "alpha3": "JOR",
+    "ascii_name": "Jordan"
+  },
+  {
+    "name": "Kazakhstan",
+    "official_name": "The Republic of Kazakhstan",
+    "sovereignty": "UN member state",
+    "alpha2": "KZ",
+    "alpha3": "KAZ",
+    "ascii_name": "Kazakhstan"
+  },
+  {
+    "name": "Kenya",
+    "official_name": "The Republic of Kenya",
+    "sovereignty": "UN member state",
+    "alpha2": "KE",
+    "alpha3": "KEN",
+    "ascii_name": "Kenya"
+  },
+  {
+    "name": "Kiribati",
+    "official_name": "The Republic of Kiribati",
+    "sovereignty": "UN member state",
+    "alpha2": "KI",
+    "alpha3": "KIR",
+    "ascii_name": "Kiribati"
+  },
+  {
+    "name": "North Korea",
+    "official_name": "The Democratic People's Republic of Korea",
+    "sovereignty": "UN member state",
+    "alpha2": "KP",
+    "alpha3": "PRK",
+    "ascii_name": "North Korea"
+  },
+  {
+    "name": "South Korea",
+    "official_name": "The Republic of Korea",
+    "sovereignty": "UN member state",
+    "alpha2": "KR",
+    "alpha3": "KOR",
+    "ascii_name": "South Korea"
+  },
+  {
+    "name": "Kuwait",
+    "official_name": "The State of Kuwait",
+    "sovereignty": "UN member state",
+    "alpha2": "KW",
+    "alpha3": "KWT",
+    "ascii_name": "Kuwait"
+  },
+  {
+    "name": "Kyrgyzstan",
+    "official_name": "The Kyrgyz Republic",
+    "sovereignty": "UN member state",
+    "alpha2": "KG",
+    "alpha3": "KGZ",
+    "ascii_name": "Kyrgyzstan"
+  },
+  {
+    "name": "Laos",
+    "official_name": "The Lao People's Democratic Republic",
+    "sovereignty": "UN member state",
+    "alpha2": "LA",
+    "alpha3": "LAO",
+    "ascii_name": "Laos"
+  },
+  {
+    "name": "Latvia",
+    "official_name": "The Republic of Latvia",
+    "sovereignty": "UN member state",
+    "alpha2": "LV",
+    "alpha3": "LVA",
+    "ascii_name": "Latvia"
+  },
+  {
+    "name": "Lebanon",
+    "official_name": "The Lebanese Republic",
+    "sovereignty": "UN member state",
+    "alpha2": "LB",
+    "alpha3": "LBN",
+    "ascii_name": "Lebanon"
+  },
+  {
+    "name": "Lesotho",
+    "official_name": "The Kingdom of Lesotho",
+    "sovereignty": "UN member state",
+    "alpha2": "LS",
+    "alpha3": "LSO",
+    "ascii_name": "Lesotho"
+  },
+  {
+    "name": "Liberia",
+    "official_name": "The Republic of Liberia",
+    "sovereignty": "UN member state",
+    "alpha2": "LR",
+    "alpha3": "LBR",
+    "ascii_name": "Liberia"
+  },
+  {
+    "name": "Libya",
+    "official_name": "The State of Libya",
+    "sovereignty": "UN member state",
+    "alpha2": "LY",
+    "alpha3": "LBY",
+    "ascii_name": "Libya"
+  },
+  {
+    "name": "Liechtenstein",
+    "official_name": "The Principality of Liechtenstein",
+    "sovereignty": "UN member state",
+    "alpha2": "LI",
+    "alpha3": "LIE",
+    "ascii_name": "Liechtenstein"
+  },
+  {
+    "name": "Lithuania",
+    "official_name": "The Republic of Lithuania",
+    "sovereignty": "UN member state",
+    "alpha2": "LT",
+    "alpha3": "LTU",
+    "ascii_name": "Lithuania"
+  },
+  {
+    "name": "Luxembourg",
+    "official_name": "The Grand Duchy of Luxembourg",
+    "sovereignty": "UN member state",
+    "alpha2": "LU",
+    "alpha3": "LUX",
+    "ascii_name": "Luxembourg"
+  },
+  {
+    "name": "Macau",
+    "official_name": "Macao Special Administrative Region of China",
+    "sovereignty": "China",
+    "alpha2": "MO",
+    "alpha3": "MAC",
+    "ascii_name": "Macau"
+  },
+  {
+    "name": "North Macedonia",
+    "official_name": "Republic of North Macedonia",
+    "sovereignty": "UN member state",
+    "alpha2": "MK",
+    "alpha3": "MKD",
+    "ascii_name": "North Macedonia"
+  },
+  {
+    "name": "Madagascar",
+    "official_name": "The Republic of Madagascar",
+    "sovereignty": "UN member state",
+    "alpha2": "MG",
+    "alpha3": "MDG",
+    "ascii_name": "Madagascar"
+  },
+  {
+    "name": "Malawi",
+    "official_name": "The Republic of Malawi",
+    "sovereignty": "UN member state",
+    "alpha2": "MW",
+    "alpha3": "MWI",
+    "ascii_name": "Malawi"
+  },
+  {
+    "name": "Malaysia",
+    "official_name": "Malaysia",
+    "sovereignty": "UN member state",
+    "alpha2": "MY",
+    "alpha3": "MYS",
+    "ascii_name": "Malaysia"
+  },
+  {
+    "name": "Maldives",
+    "official_name": "The Republic of Maldives",
+    "sovereignty": "UN member state",
+    "alpha2": "MV",
+    "alpha3": "MDV",
+    "ascii_name": "Maldives"
+  },
+  {
+    "name": "Mali",
+    "official_name": "The Republic of Mali",
+    "sovereignty": "UN member state",
+    "alpha2": "ML",
+    "alpha3": "MLI",
+    "ascii_name": "Mali"
+  },
+  {
+    "name": "Malta",
+    "official_name": "The Republic of Malta",
+    "sovereignty": "UN member state",
+    "alpha2": "MT",
+    "alpha3": "MLT",
+    "ascii_name": "Malta"
+  },
+  {
+    "name": "Marshall Islands",
+    "official_name": "The Republic of the Marshall Islands",
+    "sovereignty": "UN member state",
+    "alpha2": "MH",
+    "alpha3": "MHL",
+    "ascii_name": "Marshall Islands"
+  },
+  {
+    "name": "Martinique",
+    "official_name": "Martinique",
+    "sovereignty": "France",
+    "alpha2": "MQ",
+    "alpha3": "MTQ",
+    "ascii_name": "Martinique"
+  },
+  {
+    "name": "Mauritania",
+    "official_name": "The Islamic Republic of Mauritania",
+    "sovereignty": "UN member state",
+    "alpha2": "MR",
+    "alpha3": "MRT",
+    "ascii_name": "Mauritania"
+  },
+  {
+    "name": "Mauritius",
+    "official_name": "The Republic of Mauritius",
+    "sovereignty": "UN member state",
+    "alpha2": "MU",
+    "alpha3": "MUS",
+    "ascii_name": "Mauritius"
+  },
+  {
+    "name": "Mayotte",
+    "official_name": "The Department of Mayotte",
+    "sovereignty": "France",
+    "alpha2": "YT",
+    "alpha3": "MYT",
+    "ascii_name": "Mayotte"
+  },
+  {
+    "name": "Mexico",
+    "official_name": "The United Mexican States",
+    "sovereignty": "UN member state",
+    "alpha2": "MX",
+    "alpha3": "MEX",
+    "ascii_name": "Mexico"
+  },
+  {
+    "name": "Micronesia",
+    "official_name": "The Federated States of Micronesia",
+    "sovereignty": "UN member state",
+    "alpha2": "FM",
+    "alpha3": "FSM",
+    "ascii_name": "Micronesia"
+  },
+  {
+    "name": "Moldova",
+    "official_name": "The Republic of Moldova",
+    "sovereignty": "UN member state",
+    "alpha2": "MD",
+    "alpha3": "MDA",
+    "ascii_name": "Moldova"
+  },
+  {
+    "name": "Monaco",
+    "official_name": "The Principality of Monaco",
+    "sovereignty": "UN member state",
+    "alpha2": "MC",
+    "alpha3": "MCO",
+    "ascii_name": "Monaco"
+  },
+  {
+    "name": "Mongolia",
+    "official_name": "The State of Mongolia",
+    "sovereignty": "UN member state",
+    "alpha2": "MN",
+    "alpha3": "MNG",
+    "ascii_name": "Mongolia"
+  },
+  {
+    "name": "Montenegro",
+    "official_name": "Montenegro",
+    "sovereignty": "UN member state",
+    "alpha2": "ME",
+    "alpha3": "MNE",
+    "ascii_name": "Montenegro"
+  },
+  {
+    "name": "Montserrat",
+    "official_name": "Montserrat",
+    "sovereignty": "United Kingdom",
+    "alpha2": "MS",
+    "alpha3": "MSR",
+    "ascii_name": "Montserrat"
+  },
+  {
+    "name": " Morocco",
+    "official_name": "The Kingdom of Morocco",
+    "sovereignty": "UN member state",
+    "alpha2": "MA",
+    "alpha3": "MAR",
+    "ascii_name": " Morocco"
+  },
+  {
+    "name": "Mozambique",
+    "official_name": "The Republic of Mozambique",
+    "sovereignty": "UN member state",
+    "alpha2": "MZ",
+    "alpha3": "MOZ",
+    "ascii_name": "Mozambique"
+  },
+  {
+    "name": "Myanmar",
+    "official_name": "The Republic of the Union of Myanmar",
+    "sovereignty": "UN member state",
+    "alpha2": "MM",
+    "alpha3": "MMR",
+    "ascii_name": "Myanmar"
+  },
+  {
+    "name": "Namibia",
+    "official_name": "The Republic of Namibia",
+    "sovereignty": "UN member state",
+    "alpha2": "NA",
+    "alpha3": "NAM",
+    "ascii_name": "Namibia"
+  },
+  {
+    "name": "Nauru",
+    "official_name": "The Republic of Nauru",
+    "sovereignty": "UN member state",
+    "alpha2": "NR",
+    "alpha3": "NRU",
+    "ascii_name": "Nauru"
+  },
+  {
+    "name": "Nepal",
+    "official_name": "The Federal Democratic Republic of Nepal",
+    "sovereignty": "UN member state",
+    "alpha2": "NP",
+    "alpha3": "NPL",
+    "ascii_name": "Nepal"
+  },
+  {
+    "name": "Netherlands",
+    "official_name": "The Kingdom of the Netherlands",
+    "sovereignty": "UN member state",
+    "alpha2": "NL",
+    "alpha3": "NLD",
+    "ascii_name": "Netherlands"
+  },
+  {
+    "name": "New Caledonia",
+    "official_name": "New Caledonia",
+    "sovereignty": "France",
+    "alpha2": "NC",
+    "alpha3": "NCL",
+    "ascii_name": "New Caledonia"
+  },
+  {
+    "name": "New Zealand",
+    "official_name": "New Zealand",
+    "sovereignty": "UN member state",
+    "alpha2": "NZ",
+    "alpha3": "NZL",
+    "ascii_name": "New Zealand"
+  },
+  {
+    "name": "Nicaragua",
+    "official_name": "The Republic of Nicaragua",
+    "sovereignty": "UN member state",
+    "alpha2": "NI",
+    "alpha3": "NIC",
+    "ascii_name": "Nicaragua"
+  },
+  {
+    "name": "Niger",
+    "official_name": "The Republic of the Niger",
+    "sovereignty": "UN member state",
+    "alpha2": "NE",
+    "alpha3": "NER",
+    "ascii_name": "Niger"
+  },
+  {
+    "name": "Nigeria",
+    "official_name": "The Federal Republic of Nigeria",
+    "sovereignty": "UN member state",
+    "alpha2": "NG",
+    "alpha3": "NGA",
+    "ascii_name": "Nigeria"
+  },
+  {
+    "name": "Niue",
+    "official_name": "Niue",
+    "sovereignty": "New Zealand",
+    "alpha2": "NU",
+    "alpha3": "NIU",
+    "ascii_name": "Niue"
+  },
+  {
+    "name": "Norfolk Island",
+    "official_name": "The Territory of Norfolk Island",
+    "sovereignty": "Australia",
+    "alpha2": "NF",
+    "alpha3": "NFK",
+    "ascii_name": "Norfolk Island"
+  },
+  {
+    "name": "Mariana Islands",
+    "official_name": "The Commonwealth of the Northern Mariana Islands",
+    "sovereignty": "United States",
+    "alpha2": "MP",
+    "alpha3": "MNP",
+    "ascii_name": "Mariana Islands"
+  },
+  {
+    "name": "Norway",
+    "official_name": "The Kingdom of Norway",
+    "sovereignty": "UN member state",
+    "alpha2": "NO",
+    "alpha3": "NOR",
+    "ascii_name": "Norway"
+  },
+  {
+    "name": "Oman",
+    "official_name": "The Sultanate of Oman",
+    "sovereignty": "UN member state",
+    "alpha2": "OM",
+    "alpha3": "OMN",
+    "ascii_name": "Oman"
+  },
+  {
+    "name": "Pakistan",
+    "official_name": "The Islamic Republic of Pakistan",
+    "sovereignty": "UN member state",
+    "alpha2": "PK",
+    "alpha3": "PAK",
+    "ascii_name": "Pakistan"
+  },
+  {
+    "name": "Palau",
+    "official_name": "The Republic of Palau",
+    "sovereignty": "UN member state",
+    "alpha2": "PW",
+    "alpha3": "PLW",
+    "ascii_name": "Palau"
+  },
+  {
+    "name": "Palestine",
+    "official_name": "The State of Palestine",
+    "sovereignty": "UN observer",
+    "alpha2": "PS",
+    "alpha3": "PSE",
+    "ascii_name": "Palestine"
+  },
+  {
+    "name": "Panama",
+    "official_name": "The Republic of Panamá",
+    "sovereignty": "UN member state",
+    "alpha2": "PA",
+    "alpha3": "PAN",
+    "ascii_name": "Panama"
+  },
+  {
+    "name": "Papua New Guinea",
+    "official_name": "The Independent State of Papua New Guinea",
+    "sovereignty": "UN member state",
+    "alpha2": "PG",
+    "alpha3": "PNG",
+    "ascii_name": "Papua New Guinea"
+  },
+  {
+    "name": "Paraguay",
+    "official_name": "The Republic of Paraguay",
+    "sovereignty": "UN member state",
+    "alpha2": "PY",
+    "alpha3": "PRY",
+    "ascii_name": "Paraguay"
+  },
+  {
+    "name": "Peru",
+    "official_name": "The Republic of Perú",
+    "sovereignty": "UN member state",
+    "alpha2": "PE",
+    "alpha3": "PER",
+    "ascii_name": "Peru"
+  },
+  {
+    "name": "Philippines",
+    "official_name": "The Republic of the Philippines",
+    "sovereignty": "UN member state",
+    "alpha2": "PH",
+    "alpha3": "PHL",
+    "ascii_name": "Philippines"
+  },
+  {
+    "name": "Pitcairn",
+    "official_name": "The Pitcairn, Henderson, Ducie and Oeno Islands",
+    "sovereignty": "United Kingdom",
+    "alpha2": "PN",
+    "alpha3": "PCN",
+    "ascii_name": "Pitcairn"
+  },
+  {
+    "name": "Poland",
+    "official_name": "The Republic of Poland",
+    "sovereignty": "UN member state",
+    "alpha2": "PL",
+    "alpha3": "POL",
+    "ascii_name": "Poland"
+  },
+  {
+    "name": "Portugal",
+    "official_name": "The Portuguese Republic",
+    "sovereignty": "UN member state",
+    "alpha2": "PT",
+    "alpha3": "PRT",
+    "ascii_name": "Portugal"
+  },
+  {
+    "name": "Puerto Rico",
+    "official_name": "The Commonwealth of Puerto Rico",
+    "sovereignty": "United States",
+    "alpha2": "PR",
+    "alpha3": "PRI",
+    "ascii_name": "Puerto Rico"
+  },
+  {
+    "name": "Qatar",
+    "official_name": "The State of Qatar",
+    "sovereignty": "UN member state",
+    "alpha2": "QA",
+    "alpha3": "QAT",
+    "ascii_name": "Qatar"
+  },
+  {
+    "name": "Réunion",
+    "official_name": "Réunion",
+    "sovereignty": "France",
+    "alpha2": "RE",
+    "alpha3": "REU",
+    "ascii_name": "Réunion"
+  },
+  {
+    "name": "Romania",
+    "official_name": "Romania",
+    "sovereignty": "UN member state",
+    "alpha2": "RO",
+    "alpha3": "ROU",
+    "ascii_name": "Romania"
+  },
+  {
+    "name": "Russia",
+    "official_name": "The Russian Federation",
+    "sovereignty": "UN member state",
+    "alpha2": "RU",
+    "alpha3": "RUS",
+    "ascii_name": "Russia"
+  },
+  {
+    "name": "Rwanda",
+    "official_name": "The Republic of Rwanda",
+    "sovereignty": "UN member state",
+    "alpha2": "RW",
+    "alpha3": "RWA",
+    "ascii_name": "Rwanda"
+  },
+  {
+    "name": "Saint Barthélemy",
+    "official_name": "The Collectivity of Saint-Barthélemy",
+    "sovereignty": "France",
+    "alpha2": "BL",
+    "alpha3": "BLM",
+    "ascii_name": "Saint Barthélemy"
+  },
+  {
+    "name": "Ascension Island",
+    "official_name": "Saint Helena, Ascension and Tristan da Cunha",
+    "sovereignty": "United Kingdom",
+    "alpha2": "SH",
+    "alpha3": "SHN",
+    "ascii_name": "Ascension Island"
+  },
+  {
+    "name": "Saint Kitts",
+    "official_name": "Saint Kitts and Nevis",
+    "sovereignty": "UN member state",
+    "alpha2": "KN",
+    "alpha3": "KNA",
+    "ascii_name": "Saint Kitts"
+  },
+  {
+    "name": "Saint Lucia",
+    "official_name": "Saint Lucia",
+    "sovereignty": "UN member state",
+    "alpha2": "LC",
+    "alpha3": "LCA",
+    "ascii_name": "Saint Lucia"
+  },
+  {
+    "name": "Saint Martin",
+    "official_name": "The Collectivity of Saint-Martin",
+    "sovereignty": "France",
+    "alpha2": "MF",
+    "alpha3": "MAF",
+    "ascii_name": "Saint Martin"
+  },
+  {
+    "name": "Saint Pierre",
+    "official_name": "The Overseas Collectivity of Saint-Pierre and Miquelon",
+    "sovereignty": "France",
+    "alpha2": "PM",
+    "alpha3": "SPM",
+    "ascii_name": "Saint Pierre"
+  },
+  {
+    "name": "Saint Vincent",
+    "official_name": "Saint Vincent and the Grenadines",
+    "sovereignty": "UN member state",
+    "alpha2": "VC",
+    "alpha3": "VCT",
+    "ascii_name": "Saint Vincent"
+  },
+  {
+    "name": "Samoa",
+    "official_name": "The Independent State of Samoa",
+    "sovereignty": "UN member state",
+    "alpha2": "WS",
+    "alpha3": "WSM",
+    "ascii_name": "Samoa"
+  },
+  {
+    "name": "San Marino",
+    "official_name": "The Republic of San Marino",
+    "sovereignty": "UN member state",
+    "alpha2": "SM",
+    "alpha3": "SMR",
+    "ascii_name": "San Marino"
+  },
+  {
+    "name": "Sao Tome",
+    "official_name": "The Democratic Republic of São Tomé and Príncipe",
+    "sovereignty": "UN member state",
+    "alpha2": "ST",
+    "alpha3": "STP",
+    "ascii_name": "Sao Tome"
+  },
+  {
+    "name": "Saudi Arabia",
+    "official_name": "The Kingdom of Saudi Arabia",
+    "sovereignty": "UN member state",
+    "alpha2": "SA",
+    "alpha3": "SAU",
+    "ascii_name": "Saudi Arabia"
+  },
+  {
+    "name": "Senegal",
+    "official_name": "The Republic of Senegal",
+    "sovereignty": "UN member state",
+    "alpha2": "SN",
+    "alpha3": "SEN",
+    "ascii_name": "Senegal"
+  },
+  {
+    "name": "Serbia",
+    "official_name": "The Republic of Serbia",
+    "sovereignty": "UN member state",
+    "alpha2": "RS",
+    "alpha3": "SRB",
+    "ascii_name": "Serbia"
+  },
+  {
+    "name": "Seychelles",
+    "official_name": "The Republic of Seychelles",
+    "sovereignty": "UN member state",
+    "alpha2": "SC",
+    "alpha3": "SYC",
+    "ascii_name": "Seychelles"
+  },
+  {
+    "name": "Sierra Leone",
+    "official_name": "The Republic of Sierra Leone",
+    "sovereignty": "UN member state",
+    "alpha2": "SL",
+    "alpha3": "SLE",
+    "ascii_name": "Sierra Leone"
+  },
+  {
+    "name": "Singapore",
+    "official_name": "The Republic of Singapore",
+    "sovereignty": "UN member state",
+    "alpha2": "SG",
+    "alpha3": "SGP",
+    "ascii_name": "Singapore"
+  },
+  {
+    "name": "Sint Maarten",
+    "official_name": "Sint Maarten",
+    "sovereignty": "Netherlands",
+    "alpha2": "SX",
+    "alpha3": "SXM",
+    "ascii_name": "Sint Maarten"
+  },
+  {
+    "name": "Slovakia",
+    "official_name": "The Slovak Republic",
+    "sovereignty": "UN member state",
+    "alpha2": "SK",
+    "alpha3": "SVK",
+    "ascii_name": "Slovakia"
+  },
+  {
+    "name": "Slovenia",
+    "official_name": "The Republic of Slovenia",
+    "sovereignty": "UN member state",
+    "alpha2": "SI",
+    "alpha3": "SVN",
+    "ascii_name": "Slovenia"
+  },
+  {
+    "name": "Solomon Islands",
+    "official_name": "The Solomon Islands",
+    "sovereignty": "UN member state",
+    "alpha2": "SB",
+    "alpha3": "SLB",
+    "ascii_name": "Solomon Islands"
+  },
+  {
+    "name": "Somalia",
+    "official_name": "The Federal Republic of Somalia",
+    "sovereignty": "UN member state",
+    "alpha2": "SO",
+    "alpha3": "SOM",
+    "ascii_name": "Somalia"
+  },
+  {
+    "name": "South Africa",
+    "official_name": "The Republic of South Africa",
+    "sovereignty": "UN member state",
+    "alpha2": "ZA",
+    "alpha3": "ZAF",
+    "ascii_name": "South Africa"
+  },
+  {
+    "name": "South Georgia",
+    "official_name": "South Georgia and the South Sandwich Islands",
+    "sovereignty": "United Kingdom",
+    "alpha2": "GS",
+    "alpha3": "SGS",
+    "ascii_name": "South Georgia"
+  },
+  {
+    "name": "South Sudan",
+    "official_name": "The Republic of South Sudan",
+    "sovereignty": "UN member state",
+    "alpha2": "SS",
+    "alpha3": "SSD",
+    "ascii_name": "South Sudan"
+  },
+  {
+    "name": "Spain",
+    "official_name": "The Kingdom of Spain",
+    "sovereignty": "UN member state",
+    "alpha2": "ES",
+    "alpha3": "ESP",
+    "ascii_name": "Spain"
+  },
+  {
+    "name": "Sri Lanka",
+    "official_name": "The Democratic Socialist Republic of Sri Lanka",
+    "sovereignty": "UN member state",
+    "alpha2": "LK",
+    "alpha3": "LKA",
+    "ascii_name": "Sri Lanka"
+  },
+  {
+    "name": "Sudan",
+    "official_name": "The Republic of the Sudan",
+    "sovereignty": "UN member state",
+    "alpha2": "SD",
+    "alpha3": "SDN",
+    "ascii_name": "Sudan"
+  },
+  {
+    "name": "Suriname",
+    "official_name": "The Republic of Suriname",
+    "sovereignty": "UN member state",
+    "alpha2": "SR",
+    "alpha3": "SUR",
+    "ascii_name": "Suriname"
+  },
+  {
+    "name": "Svalbard",
+    "official_name": "Svalbard and Jan Mayen",
+    "sovereignty": "Norway",
+    "alpha2": "SJ",
+    "alpha3": "SJM",
+    "ascii_name": "Svalbard"
+  },
+  {
+    "name": "Sweden",
+    "official_name": "The Kingdom of Sweden",
+    "sovereignty": "UN member state",
+    "alpha2": "SE",
+    "alpha3": "SWE",
+    "ascii_name": "Sweden"
+  },
+  {
+    "name": "Switzerland",
+    "official_name": "The Swiss Confederation",
+    "sovereignty": "UN member state",
+    "alpha2": "CH",
+    "alpha3": "CHE",
+    "ascii_name": "Switzerland"
+  },
+  {
+    "name": "Syria",
+    "official_name": "The Syrian Arab Republic",
+    "sovereignty": "UN member state",
+    "alpha2": "SY",
+    "alpha3": "SYR",
+    "ascii_name": "Syria"
+  },
+  {
+    "name": "Taiwan",
+    "official_name": "The Republic of China",
+    "sovereignty": "disputed [z]",
+    "alpha2": "TW",
+    "alpha3": "TWN",
+    "ascii_name": "Taiwan"
+  },
+  {
+    "name": "Tajikistan",
+    "official_name": "The Republic of Tajikistan",
+    "sovereignty": "UN member state",
+    "alpha2": "TJ",
+    "alpha3": "TJK",
+    "ascii_name": "Tajikistan"
+  },
+  {
+    "name": "Tanzania",
+    "official_name": "The United Republic of Tanzania",
+    "sovereignty": "UN member state",
+    "alpha2": "TZ",
+    "alpha3": "TZA",
+    "ascii_name": "Tanzania"
+  },
+  {
+    "name": "Thailand",
+    "official_name": "The Kingdom of Thailand",
+    "sovereignty": "UN member state",
+    "alpha2": "TH",
+    "alpha3": "THA",
+    "ascii_name": "Thailand"
+  },
+  {
+    "name": "Timor-Leste",
+    "official_name": "The Democratic Republic of Timor-Leste",
+    "sovereignty": "UN member state",
+    "alpha2": "TL",
+    "alpha3": "TLS",
+    "ascii_name": "Timor-Leste"
+  },
+  {
+    "name": "Togo",
+    "official_name": "The Togolese Republic",
+    "sovereignty": "UN member state",
+    "alpha2": "TG",
+    "alpha3": "TGO",
+    "ascii_name": "Togo"
+  },
+  {
+    "name": "Tokelau",
+    "official_name": "Tokelau",
+    "sovereignty": "New Zealand",
+    "alpha2": "TK",
+    "alpha3": "TKL",
+    "ascii_name": "Tokelau"
+  },
+  {
+    "name": "Tonga",
+    "official_name": "The Kingdom of Tonga",
+    "sovereignty": "UN member state",
+    "alpha2": "TO",
+    "alpha3": "TON",
+    "ascii_name": "Tonga"
+  },
+  {
+    "name": "Trinidad and Tobago",
+    "official_name": "The Republic of Trinidad and Tobago",
+    "sovereignty": "UN member state",
+    "alpha2": "TT",
+    "alpha3": "TTO",
+    "ascii_name": "Trinidad and Tobago"
+  },
+  {
+    "name": "Tunisia",
+    "official_name": "The Republic of Tunisia",
+    "sovereignty": "UN member state",
+    "alpha2": "TN",
+    "alpha3": "TUN",
+    "ascii_name": "Tunisia"
+  },
+  {
+    "name": "Turkey",
+    "official_name": "The Republic of Turkey",
+    "sovereignty": "UN member state",
+    "alpha2": "TR",
+    "alpha3": "TUR",
+    "ascii_name": "Turkey"
+  },
+  {
+    "name": "Turkmenistan",
+    "official_name": "Turkmenistan",
+    "sovereignty": "UN member state",
+    "alpha2": "TM",
+    "alpha3": "TKM",
+    "ascii_name": "Turkmenistan"
+  },
+  {
+    "name": "Turks and Caicos Islands",
+    "official_name": "The Turks and Caicos Islands",
+    "sovereignty": "United Kingdom",
+    "alpha2": "TC",
+    "alpha3": "TCA",
+    "ascii_name": "Turks and Caicos Islands"
+  },
+  {
+    "name": "Tuvalu",
+    "official_name": "Tuvalu",
+    "sovereignty": "UN member state",
+    "alpha2": "TV",
+    "alpha3": "TUV",
+    "ascii_name": "Tuvalu"
+  },
+  {
+    "name": "Uganda",
+    "official_name": "The Republic of Uganda",
+    "sovereignty": "UN member state",
+    "alpha2": "UG",
+    "alpha3": "UGA",
+    "ascii_name": "Uganda"
+  },
+  {
+    "name": "Ukraine",
+    "official_name": "Ukraine",
+    "sovereignty": "UN member state",
+    "alpha2": "UA",
+    "alpha3": "UKR",
+    "ascii_name": "Ukraine"
+  },
+  {
+    "name": "United Arab Emirates",
+    "official_name": "The United Arab Emirates",
+    "sovereignty": "UN member state",
+    "alpha2": "AE",
+    "alpha3": "ARE",
+    "ascii_name": "United Arab Emirates"
+  },
+  {
+    "name": "England",
+    "official_name": "The United Kingdom of Great Britain and Northern Ireland",
+    "sovereignty": "UN member state",
+    "alpha2": "GB",
+    "alpha3": "GBR",
+    "ascii_name": "England"
+  },
+  {
+    "name": "United States Minor Outlying Islands",
+    "official_name": "Baker Island, Howland Island, Jarvis Island, Johnston Atoll, Kingman Reef, Midway Atoll, Navassa Island, Palmyra Atoll, and Wake Island",
+    "sovereignty": "United States",
+    "alpha2": "UM",
+    "alpha3": "UMI",
+    "ascii_name": "United States Minor Outlying Islands"
+  },
+  {
+    "name": "United States of America",
+    "official_name": "The United States of America",
+    "sovereignty": "UN member state",
+    "alpha2": "US",
+    "alpha3": "USA",
+    "ascii_name": "United States of America"
+  },
+  {
+    "name": "Uruguay",
+    "official_name": "The Oriental Republic of Uruguay",
+    "sovereignty": "UN member state",
+    "alpha2": "UY",
+    "alpha3": "URY",
+    "ascii_name": "Uruguay"
+  },
+  {
+    "name": "Uzbekistan",
+    "official_name": "The Republic of Uzbekistan",
+    "sovereignty": "UN member state",
+    "alpha2": "UZ",
+    "alpha3": "UZB",
+    "ascii_name": "Uzbekistan"
+  },
+  {
+    "name": "Vanuatu",
+    "official_name": "The Republic of Vanuatu",
+    "sovereignty": "UN member state",
+    "alpha2": "VU",
+    "alpha3": "VUT",
+    "ascii_name": "Vanuatu"
+  },
+  {
+    "name": "Venezuela",
+    "official_name": "The Bolivarian Republic of Venezuela",
+    "sovereignty": "UN member state",
+    "alpha2": "VE",
+    "alpha3": "VEN",
+    "ascii_name": "Venezuela"
+  },
+  {
+    "name": "Vietnam",
+    "official_name": "The Socialist Republic of Viet Nam",
+    "sovereignty": "UN member state",
+    "alpha2": "VN",
+    "alpha3": "VNM",
+    "ascii_name": "Vietnam"
+  },
+  {
+    "name": "British Virgin Islands",
+    "official_name": "The Virgin Islands",
+    "sovereignty": "United Kingdom",
+    "alpha2": "VG",
+    "alpha3": "VGB",
+    "ascii_name": "British Virgin Islands"
+  },
+  {
+    "name": "U.S. Virgin Islands",
+    "official_name": "The Virgin Islands of the United States",
+    "sovereignty": "United States",
+    "alpha2": "VI",
+    "alpha3": "VIR",
+    "ascii_name": "U.S. Virgin Islands"
+  },
+  {
+    "name": "Wallis and Futuna",
+    "official_name": "The Territory of the Wallis and Futuna Islands",
+    "sovereignty": "France",
+    "alpha2": "WF",
+    "alpha3": "WLF",
+    "ascii_name": "Wallis and Futuna"
+  },
+  {
+    "name": "Western Sahara",
+    "official_name": "The Sahrawi Arab Democratic Republic",
+    "sovereignty": "N/A",
+    "alpha2": "EH",
+    "alpha3": "ESH",
+    "ascii_name": "Western Sahara"
+  },
+  {
+    "name": "Yemen",
+    "official_name": "The Republic of Yemen",
+    "sovereignty": "UN member state",
+    "alpha2": "YE",
+    "alpha3": "YEM",
+    "ascii_name": "Yemen"
+  },
+  {
+    "name": "Zambia",
+    "official_name": "The Republic of Zambia",
+    "sovereignty": "UN member state",
+    "alpha2": "ZM",
+    "alpha3": "ZMB",
+    "ascii_name": "Zambia"
+  },
+  {
+    "name": "Zimbabwe",
+    "official_name": "The Republic of Zimbabwe",
+    "sovereignty": "UN member state",
+    "alpha2": "ZW",
+    "alpha3": "ZWE",
+    "ascii_name": "Zimbabwe"
+  }
+]
