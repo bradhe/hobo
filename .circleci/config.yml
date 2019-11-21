@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  build:
+  test:
     docker:
       - image: circleci/golang:1.13
     working_directory: /go/src/github.com/bradhe/hobo
@@ -23,10 +23,10 @@ workflows:
   version: 2
   build-deploy:
     jobs:
-      - build
+      - test
       - deploy:
           requires:
-            - build
+            - test
           filters:
             branches:
               only: master
