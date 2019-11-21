@@ -1,9 +1,11 @@
 package loading
 
 import (
+	"compress/gzip"
 	"encoding/csv"
 	"io"
 	"net/url"
+	"path"
 	"strconv"
 
 	"github.com/bradhe/location-search/content"
@@ -65,7 +67,22 @@ func ParseExport(loc *url.URL, cb ParseExportCallbackFunc) error {
 
 	defer f.Close()
 
-	return ParseExportReader(f, cb)
+	// We separate control paths here because we have to explicitly manage
+	// closing the underlying streams ourselves in the case that we're using
+	// gzip.
+	if path.Ext(loc.Path) == ".gz" {
+		gz, err := gzip.NewReader(f)
+
+		if err != nil {
+			return err
+		}
+
+		defer gz.Close()
+
+		return ParseExportReader(gz, cb)
+	} else {
+		return ParseExportReader(f, cb)
+	}
 }
 
 func getString(header string, headers, row []string) string {

@@ -39,12 +39,34 @@ func doLoad(c *cli.Context) error {
 		panic(err)
 	}
 
+	importer, err := loading.NewImporter(esurl)
+
+	if err != nil {
+		panic(err)
+	}
+
 	export := c.String("export-url")
 
 	buf := loading.NewBulkIndexBuffer("cities")
 
+	logger.Infof("starting load for %s", export)
+
+	var total int
+
 	cb := func(city models.City) error {
 		buf.Add(city)
+
+		if buf.Count()%10000 == 0 {
+			total += buf.Count()
+			logger.Infof(" ... importing %d cities (%d total)", buf.Count(), total)
+
+			if err = importer.Import(buf); err != nil {
+				panic(err)
+			} else {
+				buf = loading.NewBulkIndexBuffer("cities")
+			}
+		}
+
 		return nil
 	}
 
@@ -55,19 +77,13 @@ func doLoad(c *cli.Context) error {
 			panic(err)
 		}
 
-		loading.ParseExport(loc, cb)
+		if err := loading.ParseExport(loc, cb); err != nil {
+			panic(err)
+		}
 	} else {
-		loading.ParseExportReader(os.Stdin, cb)
-	}
-
-	importer, err := loading.NewImporter(esurl)
-
-	if err != nil {
-		panic(err)
-	}
-
-	if err = importer.Import(buf); err != nil {
-		panic(err)
+		if err := loading.ParseExportReader(os.Stdin, cb); err != nil {
+			panic(err)
+		}
 	}
 
 	return nil

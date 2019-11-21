@@ -12,6 +12,7 @@ import (
 type BulkIndexBuffer struct {
 	index string
 	buf   *bytes.Buffer
+	count int
 }
 
 func Bytes(r io.Reader) []byte {
@@ -24,17 +25,22 @@ func Bytes(r io.Reader) []byte {
 	return b
 }
 
-func (b BulkIndexBuffer) Add(c models.City) error {
+func (b *BulkIndexBuffer) Add(c models.City) error {
 	b.buf.WriteString(fmt.Sprintf(`{"index": {"_index": "%s", "_id": "%s"}}`, b.index, c.ID))
 	b.buf.Write([]byte("\n"))
 	b.buf.Write(Bytes(c.SerializeJSON()))
+	b.count += 1
 	return nil
 }
 
-func (b BulkIndexBuffer) Reader() io.Reader {
+func (b *BulkIndexBuffer) Count() int {
+	return b.count
+}
+
+func (b *BulkIndexBuffer) Reader() io.Reader {
 	return b.buf
 }
 
 func NewBulkIndexBuffer(index string) *BulkIndexBuffer {
-	return &BulkIndexBuffer{index, bytes.NewBufferString("")}
+	return &BulkIndexBuffer{index, bytes.NewBufferString(""), 0}
 }
