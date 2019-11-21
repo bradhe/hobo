@@ -1,6 +1,4 @@
-# :information_desk_person: hobo
-
-:wave: Welcome to Hobo!
+:information_desk_person: *Welcome to Hobo!* :wave:
 
 Hobo is a service for autocompleting cities. Most of the heavy lifting is done
 in ElasticSearch, but Hobo provides a standard data model and interface for
