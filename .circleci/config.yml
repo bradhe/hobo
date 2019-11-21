@@ -3,6 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/golang:1.13
+    working_directory: /go/src/github.com/bradhe/hobo
     steps:
       - checkout
       - run:
@@ -11,6 +12,7 @@ jobs:
   deploy:
     docker:
       - image: circleci/golang:1.13
+    working_directory: /go/src/github.com/bradhe/hobo
     steps:
       - checkout
       - setup_remote_docker
