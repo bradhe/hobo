@@ -30,7 +30,7 @@ func doServe(c *cli.Context) error {
 	return server.ListenAndServe(c.GlobalString("addr"))
 }
 
-func doLoad(c *cli.Context) error {
+func doImport(c *cli.Context) error {
 	go killOnSignal(c)
 
 	esurl, err := url.Parse(c.GlobalString("elasticsearch-url"))
@@ -144,7 +144,7 @@ func main() {
 			&cli.StringFlag{
 				Name:  "elasticsearch-url",
 				Value: "http://localhost:9200",
-				Usage: "elasticsearch url to use for loading and search",
+				Usage: "elasticsearch url to use for importing and search",
 			},
 		},
 		Commands: []cli.Command{
@@ -154,8 +154,8 @@ func main() {
 				Action: doServe,
 			},
 			{
-				Name:   "load",
-				Usage:  "load data in to ElasticSearch",
+				Name:   "import",
+				Usage:  "import data in to ElasticSearch",
 				Action: doLoad,
 				Flags: []cli.Flag{
 					&cli.StringFlag{
