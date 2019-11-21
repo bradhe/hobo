@@ -3,10 +3,10 @@ services:
   search:
     image: bradhe/location-search:latest
     ports:
-      - 8765:8765
+      - 8081:8081
     command:
       - /app/location-search
-      - --addr=localhost:8765
+      - --addr=0.0.0.0:8081
       - --elasticsearch-url=http://elasticsearch:9200
       - serve
     depends_on:

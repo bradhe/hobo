@@ -6,14 +6,29 @@ import (
 
 	"github.com/bradhe/location-search/models"
 	"github.com/bradhe/location-search/search"
+
+	"github.com/gorilla/mux"
 )
 
 type Server struct {
 	client *search.Client
-	mux    *http.ServeMux
+	mux    *mux.Router
+}
+
+type NotFoundHandler struct{}
+
+func (n NotFoundHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	RenderError(w, GetError("not_found", r.Method, r.URL.Path))
+}
+
+type MethodNotAllowedHandler struct{}
+
+func (m MethodNotAllowedHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	RenderError(w, GetError("method_not_allowed", r.URL.Path, r.Method))
 }
 
 func (s *Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	logger.Infof("%s %s", r.Method, r.URL.Path)
 	s.mux.ServeHTTP(w, r)
 }
 
@@ -50,9 +65,11 @@ func New(client *search.Client) *Server {
 	s := new(Server)
 	s.client = client
 
-	mux := http.NewServeMux()
-	mux.HandleFunc("/search", s.Search)
-	s.mux = mux
+	r := mux.NewRouter()
+	r.NotFoundHandler = NotFoundHandler{}
+	r.MethodNotAllowedHandler = MethodNotAllowedHandler{}
+	r.HandleFunc("/search", s.Search).Methods("GET")
+	s.mux = r
 
 	return s
 }
