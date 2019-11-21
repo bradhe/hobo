@@ -20,8 +20,9 @@ var version string
 func doServe(c *cli.Context) error {
 	go killOnSignal(c)
 
-	logger.Infof("starting up location-search v", c.GlobalString("addr"))
-	logger.Infof("starting up location-search on %s", c.GlobalString("addr"))
+	logger.Infof("starting up location-search v%s (%s)", version, gitCommit)
+	logger.Infof(" --addr=%s", c.GlobalString("addr"))
+	logger.Infof(" --elasticsearch-addr=%s", c.GlobalString("elasticsearch-url"))
 
 	client := search.New(c.GlobalString("elasticsearch-url"))
 	server := server.New(client)
