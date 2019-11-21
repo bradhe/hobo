@@ -156,7 +156,7 @@ func main() {
 			{
 				Name:   "import",
 				Usage:  "import data in to ElasticSearch",
-				Action: doLoad,
+				Action: doImport,
 				Flags: []cli.Flag{
 					&cli.StringFlag{
 						Name:  "export-url",
