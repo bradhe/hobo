@@ -53,3 +53,11 @@ func (c City) SerializeJSON() io.Reader {
 
 	return &buf
 }
+
+func (c City) ToJSON() string {
+	if buf, err := json.Marshal(&c); err != nil {
+		panic(err)
+	} else {
+		return string(buf)
+	}
+}

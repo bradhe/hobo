@@ -5,11 +5,13 @@ import (
 	"fmt"
 	"io"
 	"io/ioutil"
+	"sync"
 
 	"github.com/bradhe/hobo/models"
 )
 
 type BulkIndexBuffer struct {
+	mut   sync.Mutex
 	index string
 	buf   *bytes.Buffer
 	count int
@@ -25,15 +27,30 @@ func Bytes(r io.Reader) []byte {
 	return b
 }
 
+func (b *BulkIndexBuffer) Reset() {
+	b.mut.Lock()
+	defer b.mut.Unlock()
+
+	b.count = 0
+	b.buf.Reset()
+}
+
 func (b *BulkIndexBuffer) Add(c models.City) error {
+	b.mut.Lock()
+	defer b.mut.Unlock()
+
 	b.buf.WriteString(fmt.Sprintf(`{"index": {"_index": "%s", "_id": "%s"}}`, b.index, c.ID))
 	b.buf.Write([]byte("\n"))
-	b.buf.Write(Bytes(c.SerializeJSON()))
+	b.buf.WriteString(c.ToJSON())
 	b.count += 1
+
 	return nil
 }
 
 func (b *BulkIndexBuffer) Count() int {
+	b.mut.Lock()
+	defer b.mut.Unlock()
+
 	return b.count
 }
 
@@ -42,5 +59,5 @@ func (b *BulkIndexBuffer) Reader() io.Reader {
 }
 
 func NewBulkIndexBuffer(index string) *BulkIndexBuffer {
-	return &BulkIndexBuffer{index, bytes.NewBufferString(""), 0}
+	return &BulkIndexBuffer{sync.Mutex{}, index, bytes.NewBufferString(""), 0}
 }
