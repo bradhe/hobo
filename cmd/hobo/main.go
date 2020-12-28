@@ -5,11 +5,11 @@ import (
 	"net/url"
 	"os"
 
-	"github.com/bradhe/hobo/loading"
-	"github.com/bradhe/hobo/models"
-	"github.com/bradhe/hobo/parsing"
-	"github.com/bradhe/hobo/search"
-	"github.com/bradhe/hobo/server"
+	"github.com/bradhe/hobo/pkg/loading"
+	"github.com/bradhe/hobo/pkg/models"
+	"github.com/bradhe/hobo/pkg/parsing"
+	"github.com/bradhe/hobo/pkg/search"
+	"github.com/bradhe/hobo/pkg/server"
 
 	"github.com/urfave/cli"
 )
