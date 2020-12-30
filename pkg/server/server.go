@@ -2,6 +2,7 @@ package server
 
 import (
 	"encoding/json"
+	"io"
 	"net/http"
 
 	"github.com/bradhe/hobo/pkg/models"
@@ -41,15 +42,20 @@ type SearchResponse struct {
 	Cities []models.City `json:"cities"`
 }
 
-func (s *Server) Search(w http.ResponseWriter, r *http.Request) {
+func (s *Server) GetSearch(w http.ResponseWriter, r *http.Request) {
 	cities, err := s.client.Search(LocationParam(r))
 
 	if err != nil {
 		logger.WithError(err).Error("search failed")
 		RenderError(w, GetError("internal_server_error"))
 	} else if err := json.NewEncoder(w).Encode(SearchResponse{cities}); err != nil {
-		panic(err)
+		logger.WithError(err).Error("failed to serialize results")
+		RenderError(w, GetError("internal_server_error"))
 	}
+}
+
+func (s *Server) GetHealthCheck(w http.ResponseWriter, r *http.Request) {
+	io.WriteString(w, `{"status": "OK"}`)
 }
 
 func (s *Server) ListenAndServe(addr string) error {
@@ -68,7 +74,8 @@ func New(client *search.Client) *Server {
 	r := mux.NewRouter()
 	r.NotFoundHandler = NotFoundHandler{}
 	r.MethodNotAllowedHandler = MethodNotAllowedHandler{}
-	r.HandleFunc("/search", s.Search).Methods("GET")
+	r.HandleFunc("/search", s.GetSearch).Methods("GET")
+	r.HandleFunc("/_health/check", s.GetHealthCheck).Methods("GET")
 	s.mux = r
 
 	return s
