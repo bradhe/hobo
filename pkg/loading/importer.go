@@ -27,7 +27,7 @@ func (i *Importer) Import(buf *BulkIndexBuffer) error {
 
 func NewImporter(hosts []string) (*Importer, error) {
 	cfg := elasticsearch.Config{
-		Addresses: hosts,
+		Addresses: addSchemes(hosts),
 	}
 
 	client, err := elasticsearch.NewClient(cfg)
