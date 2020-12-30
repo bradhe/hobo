@@ -10,17 +10,19 @@ import (
 
 type Client struct {
 	// the URL of where ElasticSearch lives
-	esurl string
+	hosts []string
 
 	// the HTTP client to use
 	c *http.Client
 }
 
 func (s *Client) indexUrl(name string) string {
-	if strings.HasSuffix(s.esurl, "/") {
-		return s.esurl + name + "/_search"
+	host := addScheme(s.hosts)
+
+	if strings.HasSuffix(host, "/") {
+		return host + name + "/_search"
 	} else {
-		return s.esurl + "/" + name + "/_search"
+		return host + "/" + name + "/_search"
 	}
 }
 
@@ -50,6 +52,6 @@ func (s *Client) Search(place string) ([]models.City, error) {
 	return cities, nil
 }
 
-func New(esurl string) *Client {
-	return &Client{esurl, http.DefaultClient}
+func New(hosts []string) *Client {
+	return &Client{hosts, http.DefaultClient}
 }

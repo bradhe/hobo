@@ -4,52 +4,40 @@ import (
 	"encoding/csv"
 	"net/url"
 	"os"
+	"strings"
 
+	"github.com/bradhe/hobo/pkg/config"
 	"github.com/bradhe/hobo/pkg/loading"
 	"github.com/bradhe/hobo/pkg/models"
 	"github.com/bradhe/hobo/pkg/parsing"
 	"github.com/bradhe/hobo/pkg/search"
 	"github.com/bradhe/hobo/pkg/server"
-
-	"github.com/urfave/cli"
 )
 
 var gitCommit string
 var version string
 
-func doServe(c *cli.Context) error {
-	go killOnSignal(c)
-
+func doServe(conf *config.Config) error {
 	logger.Infof("starting up hobo v%s (%s)", version, gitCommit)
-	logger.Infof(" --addr=%s", c.GlobalString("addr"))
-	logger.Infof(" --elasticsearch-addr=%s", c.GlobalString("elasticsearch-url"))
+	logger.Infof(" --addr=%s", conf.Addr)
+	logger.Infof(" --elasticsearch-addr=%s", strings.Join(conf.Elasticsearch.Host, ","))
 
-	client := search.New(c.GlobalString("elasticsearch-url"))
+	client := search.New(conf.Elasticsearch.Host)
 	server := server.New(client)
 
-	return server.ListenAndServe(c.GlobalString("addr"))
+	return server.ListenAndServe(conf.Addr)
 }
 
-func doImport(c *cli.Context) error {
-	go killOnSignal(c)
-
-	esurl, err := url.Parse(c.GlobalString("elasticsearch-url"))
+func doImport(conf *config.Config) error {
+	importer, err := loading.NewImporter(conf.Elasticsearch.Host)
 
 	if err != nil {
 		panic(err)
 	}
-
-	importer, err := loading.NewImporter(esurl)
-
-	if err != nil {
-		panic(err)
-	}
-
-	export := c.String("export-url")
 
 	buf := loading.NewBulkIndexBuffer("cities")
 
-	logger.Infof("starting load for %s", export)
+	logger.Infof("starting load for %s", conf.ExportURL)
 
 	var total int
 
@@ -70,8 +58,8 @@ func doImport(c *cli.Context) error {
 		return nil
 	}
 
-	if export != "" {
-		loc, err := url.Parse(export)
+	if conf.ExportURL != "" {
+		loc, err := url.Parse(conf.ExportURL)
 
 		if err != nil {
 			panic(err)
@@ -89,16 +77,8 @@ func doImport(c *cli.Context) error {
 	return nil
 }
 
-func killOnSignal(c *cli.Context) {
-	// noop
-}
-
-func doParse(c *cli.Context) error {
-	go killOnSignal(c)
-
-	data := c.String("data-url")
-
-	loc, err := url.Parse(data)
+func doParse(c *config.Config) error {
+	loc, err := url.Parse(c.DataURL)
 
 	if err != nil {
 		panic(err)
@@ -131,56 +111,25 @@ func doParse(c *cli.Context) error {
 	return nil
 }
 
-func main() {
-	app := &cli.App{
-		Name:  "hobo",
-		Usage: "perform and maintain search against a",
-		Flags: []cli.Flag{
-			&cli.StringFlag{
-				Name:  "addr",
-				Value: "localhost:8081",
-				Usage: "address to bind http server to",
-			},
-			&cli.StringFlag{
-				Name:  "elasticsearch-url",
-				Value: "http://localhost:9200",
-				Usage: "elasticsearch url to use for importing and search",
-			},
-		},
-		Commands: []cli.Command{
-			{
-				Name:   "serve",
-				Usage:  "serve an HTTP interface for serving",
-				Action: doServe,
-			},
-			{
-				Name:   "import",
-				Usage:  "import data in to ElasticSearch",
-				Action: doImport,
-				Flags: []cli.Flag{
-					&cli.StringFlag{
-						Name:  "export-url",
-						Value: "",
-						Usage: "url of the export to import",
-					},
-				},
-			},
-			{
-				Name:   "parse",
-				Usage:  "parse raw data",
-				Action: doParse,
-				Flags: []cli.Flag{
-					&cli.StringFlag{
-						Name:  "data-url",
-						Value: "",
-						Usage: "url of the data to normalize",
-					},
-				},
-			},
-		},
+func GetCommand(conf *config.Config) string {
+	if len(conf.Args) > 0 {
+		return conf.Args[0]
 	}
 
-	if err := app.Run(os.Args); err != nil {
-		panic(err)
+	return ""
+}
+
+func main() {
+	conf := config.New()
+
+	cmd := GetCommand(conf)
+
+	switch cmd {
+	case "import":
+		doImport(conf)
+	case "serve":
+		fallthrough
+	default:
+		doServe(conf)
 	}
 }

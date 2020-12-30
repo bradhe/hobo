@@ -2,7 +2,6 @@ package loading
 
 import (
 	"fmt"
-	"net/url"
 
 	"github.com/elastic/go-elasticsearch"
 )
@@ -26,11 +25,9 @@ func (i *Importer) Import(buf *BulkIndexBuffer) error {
 	return nil
 }
 
-func NewImporter(esurl *url.URL) (*Importer, error) {
+func NewImporter(hosts []string) (*Importer, error) {
 	cfg := elasticsearch.Config{
-		Addresses: []string{
-			esurl.String(),
-		},
+		Addresses: hosts,
 	}
 
 	client, err := elasticsearch.NewClient(cfg)

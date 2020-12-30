@@ -5,7 +5,12 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
+	"math/rand"
+	"regexp"
+	"time"
 )
+
+var schemeexp = regexp.MustCompile(`[a-zA-Z]://`)
 
 var tmpl = `
 {
@@ -32,4 +37,29 @@ func query(str string) string {
 	} else {
 		return fmt.Sprintf(tmpl, string(b))
 	}
+}
+
+func pickRandom(strs []string) string {
+	// TODO: I think this hides a bug.
+	if len(strs) == 0 {
+		return ""
+	}
+
+	if len(strs) == 1 {
+		return strs[0]
+	}
+
+	r := rand.New(rand.NewSource(time.Now().Unix()))
+	idx := r.Int() % len(strs)
+	return strs[idx]
+}
+
+func addScheme(hosts []string) string {
+	host := pickRandom(hosts)
+
+	if schemeexp.MatchString(host) {
+		return host
+	}
+
+	return "http://" + host
 }
