@@ -37,8 +37,6 @@ github.com/aws/aws-sdk-go/private/protocol/xml/xmlutil
 github.com/aws/aws-sdk-go/service/s3
 github.com/aws/aws-sdk-go/service/sts
 github.com/aws/aws-sdk-go/service/sts/stsiface
-# github.com/cpuguy83/go-md2man v1.0.10
-## explicit
 # github.com/elastic/go-elasticsearch v0.0.0
 ## explicit
 github.com/elastic/go-elasticsearch
@@ -61,7 +59,6 @@ github.com/hashicorp/hcl/json/parser
 github.com/hashicorp/hcl/json/scanner
 github.com/hashicorp/hcl/json/token
 # github.com/jmespath/go-jmespath v0.0.0-20180206201540-c2b33e8439af
-## explicit
 github.com/jmespath/go-jmespath
 # github.com/joho/godotenv v1.3.0
 ## explicit
@@ -78,8 +75,6 @@ github.com/mitchellh/mapstructure
 github.com/mmcloughlin/geohash
 # github.com/pelletier/go-toml v1.2.0
 github.com/pelletier/go-toml
-# github.com/russross/blackfriday v1.5.2
-## explicit
 # github.com/sirupsen/logrus v1.4.2
 ## explicit
 github.com/sirupsen/logrus
@@ -98,8 +93,6 @@ github.com/spf13/pflag
 github.com/spf13/viper
 # github.com/subosito/gotenv v1.2.0
 github.com/subosito/gotenv
-# github.com/urfave/cli v1.22.0
-## explicit
 # golang.org/x/sys v0.0.0-20191120155948-bd437916bb0e
 ## explicit
 golang.org/x/sys/unix
