@@ -6,6 +6,7 @@ import (
 	"net/url"
 	"strings"
 
+	"github.com/bradhe/hobo/pkg/config"
 	"github.com/bradhe/hobo/pkg/content"
 	"github.com/bradhe/hobo/pkg/models"
 
@@ -99,11 +100,11 @@ func LookupRegion(rec *Record, codes map[string]AdminCode) (string, string, stri
 	return rec.Admin1, code.Name, code.ASCIIName
 }
 
-func Parse(loc *url.URL, cb func(*models.City)) error {
+func Parse(conf *config.Config, loc *url.URL, cb func(*models.City)) error {
 	countries := GetCountries()
 	adminCodes := GetAdminCodes()
 
-	r, err := content.NewReader(loc)
+	r, err := content.NewReader(conf, loc)
 
 	if err != nil {
 		return err

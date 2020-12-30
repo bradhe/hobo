@@ -65,7 +65,7 @@ func doImport(conf *config.Config) error {
 			panic(err)
 		}
 
-		if err := loading.ParseExport(loc, cb); err != nil {
+		if err := loading.ParseExport(conf, loc, cb); err != nil {
 			panic(err)
 		}
 	} else {
@@ -77,8 +77,8 @@ func doImport(conf *config.Config) error {
 	return nil
 }
 
-func doParse(c *config.Config) error {
-	loc, err := url.Parse(c.DataURL)
+func doParse(conf *config.Config) error {
+	loc, err := url.Parse(conf.DataURL)
 
 	if err != nil {
 		panic(err)
@@ -103,7 +103,7 @@ func doParse(c *config.Config) error {
 
 	defer output.Flush()
 
-	parsing.Parse(loc, func(city *models.City) {
+	parsing.Parse(conf, loc, func(city *models.City) {
 		city.WriteCSV(output)
 
 	})

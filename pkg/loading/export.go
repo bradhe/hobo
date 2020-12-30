@@ -8,6 +8,7 @@ import (
 	"path"
 	"strconv"
 
+	"github.com/bradhe/hobo/pkg/config"
 	"github.com/bradhe/hobo/pkg/content"
 	"github.com/bradhe/hobo/pkg/models"
 )
@@ -58,8 +59,8 @@ func ParseExportReader(f io.Reader, cb ParseExportCallbackFunc) error {
 
 }
 
-func ParseExport(loc *url.URL, cb ParseExportCallbackFunc) error {
-	f, err := content.NewReader(loc)
+func ParseExport(conf *config.Config, loc *url.URL, cb ParseExportCallbackFunc) error {
+	f, err := content.NewReader(conf, loc)
 
 	if err != nil {
 		return err
