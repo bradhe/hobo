@@ -14,7 +14,7 @@ func dumpBody(resp *esapi.Response) string {
 }
 
 func addSchemes(hosts []string) []string {
-	clean := make([]string, 0, len(hosts))
+	clean := make([]string, len(hosts))
 
 	for i := range hosts {
 		if schemeexp.MatchString(hosts[i]) {
