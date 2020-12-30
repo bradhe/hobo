@@ -85,8 +85,8 @@ func New() *Config {
 		Args:      pflag.Args(),
 		Debug:     viper.GetBool("debug"),
 		Addr:      viper.GetString("addr"),
-		ExportURL: viper.GetString("export-url"),
-		DataURL:   viper.GetString("data-url"),
+		ExportURL: viper.GetString("export_url"),
+		DataURL:   viper.GetString("data_url"),
 		AWS: AWS{
 			Profile:         viper.GetString("aws_profile"),
 			UseEnv:          viper.GetBool("aws_use_env"),
