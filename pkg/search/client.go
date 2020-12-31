@@ -36,6 +36,7 @@ func (s *Client) Search(place string) ([]models.City, error) {
 	req.Header.Set("Content-Type", "application/json")
 
 	if s.conf.Elasticsearch.IsSignedAuthentication() {
+		logger.Debug("signing elasticsearch search request")
 		signer := v4.NewSigner(newAWSCredentials(s.conf))
 		signer.Sign(req, body, "es", s.conf.AWS.Region, time.Now())
 	}
@@ -70,6 +71,7 @@ func (s *Client) Import(buf *BulkIndexBuffer) error {
 	req.Header.Set("Content-Type", "application/json")
 
 	if s.conf.Elasticsearch.IsSignedAuthentication() {
+		logger.Debug("signing elasticsearch bulk write request")
 		signer := v4.NewSigner(newAWSCredentials(s.conf))
 		signer.Sign(req, body, "es", s.conf.AWS.Region, time.Now())
 	}
