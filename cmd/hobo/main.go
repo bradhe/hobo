@@ -29,26 +29,21 @@ func doServe(conf *config.Config) error {
 }
 
 func doImport(conf *config.Config) error {
-	importer, err := loading.NewImporter(conf.Elasticsearch.Host)
-
-	if err != nil {
-		panic(err)
-	}
-
-	buf := loading.NewBulkIndexBuffer("cities")
+	client := search.New(conf)
+	buf := search.NewBulkIndexBuffer(conf.Elasticsearch.CityIndexName)
 
 	logger.Infof("starting load for %s", conf.ExportURL)
 
 	var total int
 
-	cb := func(city models.City) error {
+	op := func(city models.City) error {
 		buf.Add(city)
 
 		if buf.Count()%5000 == 0 {
 			total += buf.Count()
 			logger.Infof(" ... importing %d cities (%d total)", buf.Count(), total)
 
-			if err = importer.Import(buf); err != nil {
+			if err := client.Import(buf); err != nil {
 				panic(err)
 			} else {
 				buf.Reset()
@@ -65,14 +60,16 @@ func doImport(conf *config.Config) error {
 			panic(err)
 		}
 
-		if err := loading.ParseExport(conf, loc, cb); err != nil {
+		if err := loading.ParseExport(conf, loc, op); err != nil {
 			panic(err)
 		}
 	} else {
-		if err := loading.ParseExportReader(os.Stdin, cb); err != nil {
+		if err := loading.ParseExportReader(os.Stdin, op); err != nil {
 			panic(err)
 		}
 	}
+
+	logger.Infof("imported complete. imported %d cities", total)
 
 	return nil
 }
