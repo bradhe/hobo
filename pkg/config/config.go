@@ -16,7 +16,9 @@ const DefaultAWSProfile = "hobo"
 
 const DefaultElasticsearchHost = "localhost:9200"
 
-const DefaultProfileIndexName = "profiles"
+const DefaultCityIndexName = "cities"
+
+const DefaultElasticsearchAuthentication = "none"
 
 type AWS struct {
 	// UseEnv indicates that we should load credentials from the EC2 role.
@@ -32,8 +34,18 @@ type AWS struct {
 }
 
 type Elasticsearch struct {
-	Host          []string
+	// Host is a slice of hosts to connect to.
+	Host []string
+
+	// CityIndexName is the name of the index to search cities for.
 	CityIndexName string
+
+	// Authentication indicates what type of authentication to use.
+	Authentication string
+}
+
+func (conf Elasticsearch) IsSignedAuthentication() bool {
+	return conf.Authentication == "signed"
 }
 
 type Config struct {
@@ -73,7 +85,8 @@ func New() *Config {
 	viper.SetDefault("aws_region", DefaultAWSRegion)
 	viper.SetDefault("aws_profile", DefaultAWSProfile)
 	viper.SetDefault("elasticsearch_host", DefaultElasticsearchHost)
-	viper.SetDefault("elasticsearch_profile_index", DefaultProfileIndexName)
+	viper.SetDefault("elasticsearch_city_index", DefaultCityIndexName)
+	viper.SetDefault("elasticsearch_authentication", DefaultElasticsearchAuthentication)
 
 	pflag.Bool("debug", false, "puts the server in debug mode")
 
@@ -95,8 +108,9 @@ func New() *Config {
 			Region:          viper.GetString("aws_region"),
 		},
 		Elasticsearch: Elasticsearch{
-			Host:          viper.GetStringSlice("elasticsearch_host"),
-			CityIndexName: viper.GetString("elasticsearch_city_index"),
+			Host:           viper.GetStringSlice("elasticsearch_host"),
+			CityIndexName:  viper.GetString("elasticsearch_city_index"),
+			Authentication: viper.GetString("elasticsearch_authentication"),
 		},
 	}
 }

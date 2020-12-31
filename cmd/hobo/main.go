@@ -22,7 +22,7 @@ func doServe(conf *config.Config) error {
 	logger.Infof(" --addr=%s", conf.Addr)
 	logger.Infof(" --elasticsearch-addr=%s", strings.Join(conf.Elasticsearch.Host, ","))
 
-	client := search.New(conf.Elasticsearch.Host)
+	client := search.New(conf)
 	server := server.New(client)
 
 	return server.ListenAndServe(conf.Addr)

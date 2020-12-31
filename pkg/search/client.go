@@ -2,22 +2,26 @@ package search
 
 import (
 	"encoding/json"
+	"fmt"
 	"net/http"
 	"strings"
+	"time"
 
+	"github.com/bradhe/hobo/pkg/config"
 	"github.com/bradhe/hobo/pkg/models"
+
+	"github.com/aws/aws-sdk-go/aws/signer/v4"
 )
 
 type Client struct {
-	// the URL of where ElasticSearch lives
-	hosts []string
+	conf *config.Config
 
 	// the HTTP client to use
 	c *http.Client
 }
 
 func (s *Client) indexUrl(name string) string {
-	host := addScheme(s.hosts)
+	host := addScheme(s.conf.Elasticsearch.Host)
 
 	if strings.HasSuffix(host, "/") {
 		return host + name + "/_search"
@@ -27,8 +31,15 @@ func (s *Client) indexUrl(name string) string {
 }
 
 func (s *Client) Search(place string) ([]models.City, error) {
-	req, _ := http.NewRequest("POST", s.indexUrl("cities"), newBody(query(place)))
+	body := newBody(query(place))
+	req, _ := http.NewRequest("POST", s.indexUrl("cities"), body)
 	req.Header.Set("Content-Type", "application/json")
+
+	if s.conf.Elasticsearch.IsSignedAuthentication() {
+		signer := v4.NewSigner(newAWSCredentials(s.conf))
+		signer.Sign(req, body, "es", s.conf.AWS.Region, time.Now())
+	}
+
 	res, err := s.c.Do(req)
 
 	if err != nil {
@@ -52,6 +63,33 @@ func (s *Client) Search(place string) ([]models.City, error) {
 	return cities, nil
 }
 
-func New(hosts []string) *Client {
-	return &Client{hosts, http.DefaultClient}
+func (s *Client) Import(buf *BulkIndexBuffer) error {
+	host := addScheme(s.conf.Elasticsearch.Host)
+	body := buf.Reader()
+	req, _ := http.NewRequest("POST", host+"/_bulk", body)
+	req.Header.Set("Content-Type", "application/json")
+
+	if s.conf.Elasticsearch.IsSignedAuthentication() {
+		signer := v4.NewSigner(newAWSCredentials(s.conf))
+		signer.Sign(req, body, "es", s.conf.AWS.Region, time.Now())
+	}
+
+	res, err := s.c.Do(req)
+
+	if err != nil {
+		return err
+	}
+
+	defer res.Body.Close()
+
+	if res.StatusCode != 200 {
+		logger.WithField("body", dumpBody(res)).Error("bulk write to ElasticSearch failed")
+		return fmt.Errorf("import failed. expected status 200, got status %d", res.StatusCode)
+	}
+
+	return nil
+}
+
+func New(conf *config.Config) *Client {
+	return &Client{conf, http.DefaultClient}
 }

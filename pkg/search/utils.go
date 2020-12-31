@@ -5,7 +5,9 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
+	"io/ioutil"
 	"math/rand"
+	"net/http"
 	"regexp"
 	"time"
 )
@@ -27,8 +29,8 @@ var tmpl = `
   }
 }`
 
-func newBody(str string) io.Reader {
-	return bytes.NewBufferString(str)
+func newBody(str string) io.ReadSeeker {
+	return bytes.NewReader([]byte(str))
 }
 
 func query(str string) string {
@@ -62,4 +64,25 @@ func addScheme(hosts []string) string {
 	}
 
 	return "http://" + host
+}
+
+func addSchemes(hosts []string) []string {
+	clean := make([]string, len(hosts))
+
+	for i := range hosts {
+		if schemeexp.MatchString(hosts[i]) {
+			clean[i] = hosts[i]
+		} else {
+			clean[i] = "http://" + hosts[i]
+		}
+	}
+
+	return clean
+}
+
+func dumpBody(resp *http.Response) string {
+	defer resp.Body.Close()
+
+	buf, _ := ioutil.ReadAll(resp.Body)
+	return string(buf)
 }
