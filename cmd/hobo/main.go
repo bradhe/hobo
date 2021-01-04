@@ -45,7 +45,7 @@ func doImport(conf *config.Config) error {
 	op := func(city models.City) error {
 		buf.Add(city)
 
-		if buf.Count()%5000 == 0 {
+		if buf.Count()%1000 == 0 {
 			total += buf.Count()
 			logger.Infof(" ... importing %d cities (%d total)", buf.Count(), total)
 
