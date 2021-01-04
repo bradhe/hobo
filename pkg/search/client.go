@@ -7,6 +7,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/bradhe/hobo/pkg/awsutils"
 	"github.com/bradhe/hobo/pkg/config"
 	"github.com/bradhe/hobo/pkg/models"
 
@@ -37,7 +38,7 @@ func (s *Client) Search(place string) ([]models.City, error) {
 
 	if s.conf.Elasticsearch.IsSignedAuthentication() {
 		logger.Debug("signing elasticsearch search request")
-		signer := v4.NewSigner(newAWSCredentials(s.conf))
+		signer := v4.NewSigner(awsutils.Credentials(s.conf))
 		signer.Sign(req, body, "es", s.conf.AWS.Region, time.Now())
 	}
 
@@ -72,7 +73,7 @@ func (s *Client) Import(buf *BulkIndexBuffer) error {
 
 	if s.conf.Elasticsearch.IsSignedAuthentication() {
 		logger.Debug("signing elasticsearch bulk write request")
-		signer := v4.NewSigner(newAWSCredentials(s.conf))
+		signer := v4.NewSigner(awsutils.Credentials(s.conf))
 		signer.Sign(req, body, "es", s.conf.AWS.Region, time.Now())
 	} else {
 		logger.Debug("using anonymous bulk write request")

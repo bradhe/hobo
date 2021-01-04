@@ -1,4 +1,4 @@
-package search
+package awsutils
 
 import (
 	"github.com/bradhe/hobo/pkg/config"
@@ -7,7 +7,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws/defaults"
 )
 
-func newAWSCredentials(conf *config.Config) *credentials.Credentials {
+func Credentials(conf *config.Config) *credentials.Credentials {
 	if conf.AWS.UseEnv {
 		logger.Debug("fetching AWS credentials from environment")
 		return defaults.Get().Config.Credentials
