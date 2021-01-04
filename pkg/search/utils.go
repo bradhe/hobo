@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"io"
 	"io/ioutil"
+	"math"
 	"math/rand"
 	"net/http"
 	"regexp"
@@ -85,4 +86,43 @@ func dumpBody(resp *http.Response) string {
 
 	buf, _ := ioutil.ReadAll(resp.Body)
 	return string(buf)
+}
+
+type BackoffFunc func() error
+
+func isInErrors(errs []error, err error) bool {
+	for _, e := range errs {
+		if e == err {
+			return true
+		}
+	}
+
+	return false
+}
+
+func sleep(i int) {
+	mult := time.Duration((math.Exp(float64(i))/3.0)*1000.0) * time.Millisecond
+	jit := time.Duration(rand.Intn(500)) * time.Millisecond
+
+	logger.Debugf(" ... backing off %d", mult+jit)
+	time.Sleep((mult + jit))
+}
+
+func doBackoff(fn BackoffFunc, errs ...error) error {
+	var acc int
+
+	for {
+		acc += 1
+
+		if err := fn(); err != nil {
+			if isInErrors(errs, err) {
+				// we wait and we keep going
+			} else {
+				return err
+			}
+		} else {
+			// err was nil if we get here.
+			return nil
+		}
+	}
 }

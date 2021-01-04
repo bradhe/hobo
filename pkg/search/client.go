@@ -2,7 +2,6 @@ package search
 
 import (
 	"encoding/json"
-	"fmt"
 	"net/http"
 	"strings"
 	"time"
@@ -65,10 +64,10 @@ func (s *Client) Search(place string) ([]models.City, error) {
 	return cities, nil
 }
 
-func (s *Client) Import(buf *BulkIndexBuffer) error {
+func (s *Client) doImport(buf *BulkIndexBuffer) error {
 	host := addScheme(s.conf.Elasticsearch.Host)
 	body := buf.Reader()
-	req, _ := http.NewRequest("POST", host+"/_bulk", body)
+	req, _ := http.NewRequest(http.MethodPost, host+"/_bulk", body)
 	req.Header.Set("Content-Type", "application/json")
 
 	if s.conf.Elasticsearch.IsSignedAuthentication() {
@@ -88,11 +87,24 @@ func (s *Client) Import(buf *BulkIndexBuffer) error {
 	defer res.Body.Close()
 
 	if res.StatusCode != 200 {
-		logger.WithField("body", dumpBody(res)).Error("bulk write to ElasticSearch failed")
-		return fmt.Errorf("import failed. expected status 200, got status %d", res.StatusCode)
+		// A 403 indicates that there was a rate limiting error, so we should call
+		// that out explicitly.
+		if res.StatusCode == http.StatusForbidden {
+			logger.WithField("body", dumpBody(res)).Error("import rate limited")
+			return ErrImportRateLimited
+		} else {
+			logger.WithField("body", dumpBody(res)).Error("bulk write to ElasticSearch failed")
+			return ErrImportFailed
+		}
 	}
 
 	return nil
+}
+
+func (s *Client) Import(buf *BulkIndexBuffer) error {
+	return doBackoff(func() error {
+		return s.doImport(buf)
+	}, ErrImportRateLimited)
 }
 
 func New(conf *config.Config) *Client {
