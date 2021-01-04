@@ -17,9 +17,11 @@ func WithContext(ctx context.Context) Logger {
 }
 
 func EnableDebug() {
+	logger.Info("logger is entering debug mode")
 	logger.SetLevel(logrus.DebugLevel)
 }
 
 func DisableDebug() {
+	logger.Info("logger is leaving debug mode")
 	logger.SetLevel(logrus.InfoLevel)
 }

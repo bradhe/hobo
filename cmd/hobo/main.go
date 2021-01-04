@@ -17,11 +17,15 @@ import (
 var gitCommit string
 var version string
 
-func doServe(conf *config.Config) error {
+func doPrintStartup(command string, conf *config.Config) {
 	logger.Infof("starting up hobo v%s (%s)", version, gitCommit)
+	logger.Infof(" --debug=%b", conf.Debug)
 	logger.Infof(" --addr=%s", conf.Addr)
 	logger.Infof(" --elasticsearch-addr=%s", strings.Join(conf.Elasticsearch.Host, ","))
+	logger.Infof("executing: %s", command)
+}
 
+func doServe(conf *config.Config) error {
 	client := search.New(conf)
 	server := server.New(client)
 
@@ -120,6 +124,8 @@ func main() {
 	conf := config.New()
 
 	cmd := GetCommand(conf)
+
+	doPrintStartup(cmd, conf)
 
 	switch cmd {
 	case "import":
