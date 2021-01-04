@@ -8,6 +8,7 @@ import (
 
 	"github.com/bradhe/hobo/pkg/config"
 	"github.com/bradhe/hobo/pkg/loading"
+	"github.com/bradhe/hobo/pkg/logs"
 	"github.com/bradhe/hobo/pkg/models"
 	"github.com/bradhe/hobo/pkg/parsing"
 	"github.com/bradhe/hobo/pkg/search"
@@ -123,6 +124,10 @@ func GetCommand(conf *config.Config) string {
 
 func main() {
 	conf := config.New()
+
+	if conf.Debug {
+		logs.EnableDebug()
+	}
 
 	cmd := GetCommand(conf)
 
