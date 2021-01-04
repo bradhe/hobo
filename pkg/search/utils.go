@@ -117,6 +117,7 @@ func doBackoff(fn BackoffFunc, errs ...error) error {
 		if err := fn(); err != nil {
 			if isInErrors(errs, err) {
 				// we wait and we keep going
+				sleep(acc)
 			} else {
 				return err
 			}
