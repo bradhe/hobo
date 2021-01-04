@@ -5,6 +5,7 @@ import (
 	"io"
 	"net/http"
 
+	"github.com/bradhe/hobo/pkg/config"
 	"github.com/bradhe/hobo/pkg/models"
 	"github.com/bradhe/hobo/pkg/search"
 
@@ -12,7 +13,7 @@ import (
 )
 
 type Server struct {
-	client *search.Client
+	search search.Search
 	mux    *mux.Router
 }
 
@@ -46,7 +47,7 @@ func (s *Server) GetSearch(w http.ResponseWriter, r *http.Request) {
 	loc := LocationParam(r)
 	logger.WithField("location", loc).Info("performing search")
 
-	cities, err := s.client.Search(loc)
+	cities, err := s.search.Search(loc)
 
 	if err != nil {
 		logger.WithError(err).Error("search failed")
@@ -70,9 +71,10 @@ func (s *Server) ListenAndServe(addr string) error {
 	return server.ListenAndServe()
 }
 
-func New(client *search.Client) *Server {
-	s := new(Server)
-	s.client = client
+func New(conf *config.Config) *Server {
+	s := &Server{
+		search: search.New(conf),
+	}
 
 	r := mux.NewRouter()
 	r.NotFoundHandler = NotFoundHandler{}
