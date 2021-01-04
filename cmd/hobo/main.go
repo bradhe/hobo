@@ -22,6 +22,7 @@ func doPrintStartup(command string, conf *config.Config) {
 	logger.Infof(" --debug=%b", conf.Debug)
 	logger.Infof(" --addr=%s", conf.Addr)
 	logger.Infof(" --elasticsearch-addr=%s", strings.Join(conf.Elasticsearch.Host, ","))
+	logger.Infof(" --elasticsearch-authentication=%s", conf.Elasticsearch.Authentication)
 	logger.Infof("executing: %s", command)
 }
 

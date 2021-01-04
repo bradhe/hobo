@@ -1,5 +1,7 @@
 package config
 
+import "strings"
+
 import "github.com/spf13/pflag"
 import "github.com/spf13/viper"
 import "github.com/joho/godotenv"
@@ -45,7 +47,7 @@ type Elasticsearch struct {
 }
 
 func (conf Elasticsearch) IsSignedAuthentication() bool {
-	return conf.Authentication == "signed"
+	return strings.EqualFold(conf.Authentication, "signed")
 }
 
 type Config struct {
