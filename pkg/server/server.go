@@ -43,7 +43,10 @@ type SearchResponse struct {
 }
 
 func (s *Server) GetSearch(w http.ResponseWriter, r *http.Request) {
-	cities, err := s.client.Search(LocationParam(r))
+	loc := LocationParam(r)
+	logger.WithField("location", loc).Info("performing search")
+
+	cities, err := s.client.Search(loc)
 
 	if err != nil {
 		logger.WithError(err).Error("search failed")
