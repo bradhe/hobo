@@ -74,6 +74,8 @@ func (s *Client) Import(buf *BulkIndexBuffer) error {
 		logger.Debug("signing elasticsearch bulk write request")
 		signer := v4.NewSigner(newAWSCredentials(s.conf))
 		signer.Sign(req, body, "es", s.conf.AWS.Region, time.Now())
+	} else {
+		logger.Debug("using anonymous bulk write request")
 	}
 
 	res, err := s.c.Do(req)
