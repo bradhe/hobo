@@ -91,10 +91,14 @@ func New() *Config {
 	viper.SetDefault("elasticsearch_authentication", DefaultElasticsearchAuthentication)
 
 	pflag.Bool("debug", false, "puts the server in debug mode")
+	pflag.String("addr", DefaultAddr, "addr to bind to")
+	pflag.StringSlice("elasticsearch-url", []string{DefaultElasticsearchHost}, "elasticsearch url to connect to")
 
 	pflag.Parse()
 
+	viper.BindPFlag("addr", pflag.Lookup("addr"))
 	viper.BindPFlag("debug", pflag.Lookup("debug"))
+	viper.BindPFlag("elasticsearch_host", pflag.Lookup("elasticsearch-url"))
 
 	return &Config{
 		Args:      pflag.Args(),

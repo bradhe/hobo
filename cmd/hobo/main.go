@@ -28,10 +28,7 @@ func doPrintStartup(command string, conf *config.Config) {
 }
 
 func doServe(conf *config.Config) error {
-	client := search.New(conf)
-	server := server.New(client)
-
-	return server.ListenAndServe(conf.Addr)
+	return server.New(conf).ListenAndServe(conf.Addr)
 }
 
 func doImport(conf *config.Config) error {

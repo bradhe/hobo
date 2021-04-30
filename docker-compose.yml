@@ -5,7 +5,7 @@ services:
     ports:
       - 8081:8081
     command:
-      - /app/hobo
+      - /usr/bin/hobo
       - --addr=0.0.0.0:8081
       - --elasticsearch-url=http://elasticsearch:9200
       - serve
