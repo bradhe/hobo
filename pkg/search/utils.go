@@ -25,7 +25,7 @@ var tmpl = `
       "multi_match" : {
           "query" : %s,
           "type": "bool_prefix",
-          "fields": ["Name^2", "ASCIIName^2", "RegionName", "RegionID", "CountryName", "CountryID"]
+          "fields": ["Name", "ASCIIName"]
       }
   }
 }`
